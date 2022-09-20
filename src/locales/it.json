@@ -1,0 +1,14 @@
+{
+    "app": {
+        "title": "Caffe internazionale"
+    },
+    "nav": {
+      "home": "Casa",
+      "about": "Riguardo a"
+    },
+    "user_greeting": "Ciao, {name}",
+    "footer": "costruito con vye e vuei18n<br/> supportato da un eccessiva dose di caffe",
+    "card": {
+        "likes": "nessuno ❤️ ancora 😕 | {n} persona ❤️ questo | {n} persone ❤️ qyesto"
+      }
+}
