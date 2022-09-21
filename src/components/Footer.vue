@@ -1,9 +1,12 @@
 <template>
-    <p class="footer" v-html="$t('footer')" />
+    <section id="footer">
+        <p  v-html="$t('footer')" />
+    </section>
   </template>
   <style scoped>
-  .footer {
+  #footer {
     text-align: center;
-    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    background-color: aqua;
   }
   </style>
