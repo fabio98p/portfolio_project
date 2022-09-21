@@ -4,7 +4,9 @@
 		<h1>{{$t(`projects.${this.$route.params.id}.title`)}}</h1>
 		<h1>{{$t(`projects.${this.$route.params.id}.description`)}}</h1>
 		<h1>{{$t(`projects.${this.$route.params.id}.technicaldescription`)}}</h1>
-		<a :href="$t(`projects.${this.$route.params.id}.githublink`)">gino</a>
+		<a :href="$t(`projects.${this.$route.params.id}.githublink`)">
+            <font-awesome-icon icon="fa-brands fa-github" />
+        </a>
 	</section>
 </template>
 <script>
