@@ -1,10 +1,10 @@
 <template>
 	<section id="project">
-		<h1>Hello World</h1>
-		<h2>{{ $t('projects[0].title') }}</h2>
-		<h2>{{ $t('projects[0].description') }}</h2>
-		<h2>{{ $t('projects[0].technicaldescription') }}</h2>
-		<a :href="$t('projects[0].githublink')">gino</a>
+		<h1>{{$t(`projects.${this.$route.params.id}.name`)}}</h1>
+		<h1>{{$t(`projects.${this.$route.params.id}.title`)}}</h1>
+		<h1>{{$t(`projects.${this.$route.params.id}.description`)}}</h1>
+		<h1>{{$t(`projects.${this.$route.params.id}.technicaldescription`)}}</h1>
+		<a :href="$t(`projects.${this.$route.params.id}.githublink`)">gino</a>
 	</section>
 </template>
 <script>

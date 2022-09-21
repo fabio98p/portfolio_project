@@ -4,20 +4,23 @@
 	},
 	"nav": {
 		"home": "Casa",
-		"about": "Riguardo a"
+		"about": "Riguardo a",
+        "project": "Progetto",
+        "portfolio": "portfolio",
+        "snake": "snake"
 	},
 	"user_greeting": "Ciao, {name}",
 	"footer": "costruito con vye e vuei18n<br/> supportato da un eccessiva dose di caffe",
 	"card": {
 		"likes": "nessuno ❤️ ancora 😕 | {n} persona ❤️ questo | {n} persone ❤️ qyesto"
 	},
-    "projects":[
-        {
+    "projects":{
+        "portfolio": {
             "id": 0,
-            "name": "portfolioita",
-            "title": "portfolio di Parisi Fabio",
-            "description": "this project is made by fabio Parisi",
-            "technicaldescription": "lorem ipsum",
+            "name": "portfolio ita",
+            "title": "portfolio of Parisi Fabio ita",
+            "description": "this project is made by fabio Parisi ita",
+            "technicaldescription": "lorem ipsum ita",
             "githublink": "https://github.com/fabio98p/portfolio_project",
             "deploylink": "",
             "tag": [
@@ -25,8 +28,22 @@
                 "scss",
                 "i18n"
             ]
+        },
+        "snake": {
+            "id": 0,
+            "name": "snake ita",
+            "title": "snake of Parisi Fabio ita",
+            "description": "this project is made by fabio Parisi ita",
+            "technicaldescription": "lorem ipsum ita",
+            "githublink": "https://github.com/fabio98p/snake",
+            "deploylink": "",
+            "tag": [
+                "vue",
+                "scss",
+                "i18n"
+            ]
         }
-    ],
+    },
     "tag": [
         "html",
         "css",

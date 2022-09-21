@@ -4,20 +4,21 @@
 	},
 	"nav": {
 		"home": "Home",
-		"about": "About"
+		"about": "About",
+        "project": "Project"
 	},
 	"user_greeting": "Hello, {name}",
 	"footer": "Built with Vue and Vue I18n<br />Powered by an excessive amount of coffee",
 	"card": {
 		"likes": "Nobody ❤️ this yet 😕 | {n} person ❤️ this | {n} people ❤️ this"
 	},
-    "projects":[
-        {
+    "projects":{
+        "portfolio": {
             "id": 0,
-            "name": "portfolio",
-            "title": "portfolio of Parisi Fabio",
-            "description": "this project is made by fabio Parisi",
-            "technicaldescription": "lorem ipsum",
+            "name": "portfolio eng",
+            "title": "portfolio of Parisi Fabio eng",
+            "description": "this project is made by fabio Parisi eng",
+            "technicaldescription": "lorem ipsum eng",
             "githublink": "https://github.com/fabio98p/portfolio_project",
             "deploylink": "",
             "tag": [
@@ -25,8 +26,22 @@
                 "scss",
                 "i18n"
             ]
+        },
+        "snake": {
+            "id": 0,
+            "name": "snake eng",
+            "title": "snake of Parisi Fabio eng",
+            "description": "this project is made by fabio Parisi eng",
+            "technicaldescription": "lorem ipsum eng",
+            "githublink": "https://github.com/fabio98p/snake",
+            "deploylink": "",
+            "tag": [
+                "vue",
+                "scss",
+                "i18n"
+            ]
         }
-    ],
+    },
     "tag": [
         "html",
         "css",
