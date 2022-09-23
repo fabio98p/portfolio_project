@@ -1,0 +1,55 @@
+$html: #dd4b25;
+$css: #254bdd;
+$scss: #c96195;
+$bootstrap: #6c10ed;
+$js: #efd81c;
+$ts: #3178c6;
+$jquery: #0865a6;
+$react: #5ed3f3;
+$vue: #3eaf7c;
+$angular: #b9002d;
+$i18n: #008e81;
+
+$white: #fff;
+$black: #000;
+
+.tag.html{
+	background-color: $html;
+	color: $white;
+}
+.tag.css{
+	background-color: $css;
+	color: $white;
+}
+.tag.scss{
+	background-color: $scss;
+	color: $white;
+}
+.tag.js{
+	background-color: $js;
+	color: $white;
+}
+.tag.ts{
+	background-color: $ts;
+	color: $white;
+}
+.tag.jquery{
+	background-color: $jquery;
+	color: $white;
+}
+.tag.react{
+	background-color: $react;
+	color: $white;
+}
+.tag.vue{
+	background-color: $vue;
+	color: $white;
+}
+.tag.angular{
+	background-color: $angular;
+	color: $white;
+}
+.tag.i18n{
+	background-color: $i18n;
+	color: $white;
+}
