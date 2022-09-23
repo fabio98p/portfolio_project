@@ -3,9 +3,11 @@
 		"title": "International Gourmet Coffee"
 	},
 	"nav": {
-		"home": "Home",
-		"about": "About",
-        "project": "Project"
+		"home": "Casa",
+		"about": "Riguardo a",
+        "project": "Progetto",
+        "portfolio": "portfolio",
+        "snake": "snake"
 	},
 	"user_greeting": "Hello, {name}",
 	"footer": "Built with Vue and Vue I18n<br />Powered by an excessive amount of coffee",
@@ -21,6 +23,7 @@
             "technicaldescription": "lorem ipsum eng",
             "githublink": "https://github.com/fabio98p/portfolio_project",
             "deploylink": "",
+            "idvideo": "qGk4E9ss95s",
             "tag": [
                 "vue",
                 "scss",
@@ -35,6 +38,7 @@
             "technicaldescription": "lorem ipsum eng",
             "githublink": "https://github.com/fabio98p/snake",
             "deploylink": "",
+            "idvideo": "G1IbRujko-A",
             "tag": [
                 "vue",
                 "scss",

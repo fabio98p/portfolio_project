@@ -13,4 +13,12 @@ https://fontawesome.com/docs/web/use-with/vue/
 https://fontawesome.com/docs/web/use-with/vue/add-icons
 https://fontawesome.com/search
 
+link foy youtube player:
+https://youtube-vue3.vercel.app/
+https://www.npmjs.com/package/youtube-vue3
+after that i need to check if the route change and is change put a settimeout of 1ms for istantly stop the video
+https://stackoverflow.com/questions/46402809/vuejs-event-on-route-change
+https://vuejs.org/guide/essentials/watchers.html
+https://www.w3schools.com/jsref/met_win_settimeout.asp
+
 start project with: npm run serve
