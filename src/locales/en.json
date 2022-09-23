@@ -24,7 +24,18 @@
             "githublink": "https://github.com/fabio98p/portfolio_project",
             "deploylink": "",
             "idvideo": "qGk4E9ss95s",
-            "tag": [
+            "images": [
+                {
+                    "link": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fit.linkedin.com%2Fcompany%2Fimg%3Ftrk%3Dppro_cprof&psig=AOvVaw3uUZUWwTlyfIPBFIu7EoXd&ust=1664019154791000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCIjvy8foqvoCFQAAAAAdAAAAABAD"
+                },
+                {
+                    "link": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fit.linkedin.com%2Fcompany%2Fimg%3Ftrk%3Dppro_cprof&psig=AOvVaw3uUZUWwTlyfIPBFIu7EoXd&ust=1664019154791000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCIjvy8foqvoCFQAAAAAdAAAAABAD"
+                },
+                {
+                    "link": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fit.linkedin.com%2Fcompany%2Fimg%3Ftrk%3Dppro_cprof&psig=AOvVaw3uUZUWwTlyfIPBFIu7EoXd&ust=1664019154791000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCIjvy8foqvoCFQAAAAAdAAAAABAD"
+                }
+            ],
+            "tags": [
                 "vue",
                 "scss",
                 "i18n"
@@ -39,14 +50,25 @@
             "githublink": "https://github.com/fabio98p/snake",
             "deploylink": "",
             "idvideo": "G1IbRujko-A",
-            "tag": [
+            "images": [
+                {
+                    "link": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fit.linkedin.com%2Fcompany%2Fimg%3Ftrk%3Dppro_cprof&psig=AOvVaw3uUZUWwTlyfIPBFIu7EoXd&ust=1664019154791000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCIjvy8foqvoCFQAAAAAdAAAAABAD"
+                },
+                {
+                    "link": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fit.linkedin.com%2Fcompany%2Fimg%3Ftrk%3Dppro_cprof&psig=AOvVaw3uUZUWwTlyfIPBFIu7EoXd&ust=1664019154791000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCIjvy8foqvoCFQAAAAAdAAAAABAD"
+                },
+                {
+                    "link": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fit.linkedin.com%2Fcompany%2Fimg%3Ftrk%3Dppro_cprof&psig=AOvVaw3uUZUWwTlyfIPBFIu7EoXd&ust=1664019154791000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCIjvy8foqvoCFQAAAAAdAAAAABAD"
+                }
+            ],
+            "tags": [
                 "vue",
                 "scss",
                 "i18n"
             ]
         }
     },
-    "tag": [
+    "tags": [
         "html",
         "css",
         "scss",

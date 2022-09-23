@@ -24,7 +24,18 @@
             "githublink": "https://github.com/fabio98p/portfolio_project",
             "deploylink": "",
             "idvideo": "qGk4E9ss95s",
-            "tag": [
+            "images": [
+                {
+                    "link": "../assets/logo.png"
+                },
+                {
+                    "link": "aaaooo"
+                },
+                {
+                    "link": "eeeee"
+                }
+            ],
+            "tags": [
                 "vue",
                 "scss",
                 "i18n"
@@ -39,14 +50,27 @@
             "githublink": "https://github.com/fabio98p/snake",
             "deploylink": "",
             "idvideo": "G1IbRujko-A",
-            "tag": [
+            "images": [
+                {
+                    "link": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fit.wikipedia.org%2Fwiki%2FIMG_(azienda)&psig=AOvVaw2sezpKLU4SbWuSJvrmc6Id&ust=1664026760436000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCMCC9PGEq_oCFQAAAAAdAAAAABAD"
+                },
+                {
+                    "link": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fit.wikipedia.org%2Fwiki%2FIMG_(azienda)&psig=AOvVaw2sezpKLU4SbWuSJvrmc6Id&ust=1664026760436000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCMCC9PGEq_oCFQAAAAAdAAAAABAD"
+                },
+                {
+                    "link": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fit.wikipedia.org%2Fwiki%2FIMG_(azienda)&psig=AOvVaw2sezpKLU4SbWuSJvrmc6Id&ust=1664026760436000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCMCC9PGEq_oCFQAAAAAdAAAAABAD"
+                }
+            ],
+            "tags": [
                 "vue",
+                "scss",
+                "i18n",
                 "scss",
                 "i18n"
             ]
         }
     },
-    "tag": [
+    "tags": [
         "html",
         "css",
         "scss",

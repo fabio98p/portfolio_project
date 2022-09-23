@@ -9,7 +9,6 @@ export default {
         $route (to, from){
             setTimeout(() => {
                 this.stopCurrentVideo()
-                console.log("pippo");
             }, 1);
         }
     },
