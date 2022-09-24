@@ -16,11 +16,12 @@
 					<button @click="ChangeDescription">{{description}}</button>
 				</div>
 				<div class="content">
-					<YoutubePlayer class="player" />
+					<!-- <YoutubePlayer class="player" /> -->
+                    <Carousel :datas="$tm(`projects.${this.$route.params.id}.images`)" class="carousel" />
 					<p v-if="description == 'description'">{{ $t(`projects.${this.$route.params.id}.description`) }}</p>
 					<p v-else>{{ $t(`projects.${this.$route.params.id}.technicaldescription`) }}</p>
 				</div>
-				<Carousel :datas="$tm(`projects.${this.$route.params.id}.images`)" />
+                
 				<a :href="$t(`projects.${this.$route.params.id}.githublink`)">
 					<font-awesome-icon icon="fa-brands fa-github" />
 				</a>
@@ -116,6 +117,9 @@ export default {
 				margin-top: 0;
 			}
 		}
+        .carousel{
+            width: 60%;
+        }
 	}
 }
 </style>

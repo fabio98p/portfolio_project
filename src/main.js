@@ -7,10 +7,12 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 /* add some free styles */
 import { faTwitter, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import {  } from '@fortawesome/free-regular-svg-icons'
 
 import { YoutubeVue3 } from 'youtube-vue3'
 
-library.add(faTwitter, faLinkedin, faGithub)
+library.add(faTwitter, faLinkedin, faGithub, faChevronLeft, faChevronRight)
 
 createApp(App)
     .use(i18n)
