@@ -29,6 +29,4 @@ body {
 	justify-content: space-between;
 	height: 100vh;
 }
-#app .container {
-}
 </style>

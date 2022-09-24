@@ -9,20 +9,22 @@
 					</div>
 				</div>
 			</header>
-			<body>
+			<main>
 				<div class="subtitle">
 					<h2>{{ $t(`projects.${this.$route.params.id}.subtitle`) }}</h2>
+					<div class="border"></div>
 					<button @click="ChangeDescription">{{description}}</button>
 				</div>
-				<p v-if="description == 'description'">{{ $t(`projects.${this.$route.params.id}.description`) }}</p>
-				<p v-else>{{ $t(`projects.${this.$route.params.id}.technicaldescription`) }}</p>
+				<div class="content">
+					<YoutubePlayer class="player" />
+					<p v-if="description == 'description'">{{ $t(`projects.${this.$route.params.id}.description`) }}</p>
+					<p v-else>{{ $t(`projects.${this.$route.params.id}.technicaldescription`) }}</p>
+				</div>
+				<Carousel :datas="$tm(`projects.${this.$route.params.id}.images`)" />
 				<a :href="$t(`projects.${this.$route.params.id}.githublink`)">
 					<font-awesome-icon icon="fa-brands fa-github" />
 				</a>
-				<button @click="test">log</button>
-				<YoutubePlayer />
-				<Carousel :datas="$tm(`projects.${this.$route.params.id}.images`)" />
-			</body>
+			</main>
 		</div>
 	</section>
 </template>
@@ -89,15 +91,30 @@ export default {
 			}
 		}
 	}
-	body {
+	main {
 		.subtitle {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
+			width: 60%;
+			.border{
+				background-color: $black;
+				height: 2px;
+				flex-grow: 2;
+				margin: 0 20px;
+			}
 		}
-
-		p {
-			font-size: 22px;
+		.content{
+			display: flex;
+			align-items: top;
+			.player{
+				min-width: 60%;
+			}
+			p {
+				font-size: 19px;
+				width: 40%;
+				margin-top: 0;
+			}
 		}
 	}
 }

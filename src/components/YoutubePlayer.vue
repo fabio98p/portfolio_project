@@ -1,5 +1,12 @@
 <template>
-    <Youtube @change="stopCurrentVideo" ref="youtube" :autoplay="0" :videoid="$t(`projects.${this.$route.params.id}.idvideo`)" :controls="1" />
+	<div class="container">
+		<Youtube @change="stopCurrentVideo"
+		ref="youtube" 
+		:autoplay="0" 
+		:videoid="$t(`projects.${this.$route.params.id}.idvideo`)" :controls="1" 
+		:width="600" :height="400"
+		/>
+	</div>
 </template>
 
 <script>
@@ -31,3 +38,8 @@ export default {
 	}
 }
 </script>
+<style type="scss" scoped>
+	.container{
+		max-width: 100%;
+	}
+</style>
