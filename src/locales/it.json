@@ -9,6 +9,19 @@
         "portfolio": "portfolio",
         "snake": "snake"
 	},
+    "test": {
+        "titledropdown": "progetti",
+        "bodydropdown":[
+            {
+                "text": "portfolio",
+                "link": "portfolio"
+            },
+            {
+                "text": "snake",
+                "link": "snake"
+            }
+        ]
+    },
 	"user_greeting": "Ciao, {name}",
 	"footer": "costruito con vye e vuei18n<br/> supportato da un eccessiva dose di caffe",
 	"card": {
@@ -72,13 +85,14 @@
             "idvideo": "G1IbRujko-A",
             "images": [
                 {
-                    "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/640px-Image_created_with_a_mobile_phone.png"
+                    "id":1,
+                    "link": "../assets/test.png",
+                    "type": "image"
                 },
                 {
-                    "link": "https://upload.wikimedia.org/wikipedia/commons/5/5c/640x480-afframont_ujamondrone_leitosa.JPG"
-                },
-                {
-                    "link": "https://images.wallpapersden.com/image/download/8k-lake_a2tpZ2mUmZqaraWkpJRraWWtaW1l.jpg"
+                    "id": 2,
+                    "link": "https://upload.wikimedia.org/wikipedia/commons/9/91/P_Vega_de_Calardos_%28640x480%29.jpg",
+                    "type": "image"
                 }
             ],
             "tags": [

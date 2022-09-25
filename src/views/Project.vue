@@ -13,15 +13,15 @@
 				<div class="subtitle">
 					<h2>{{ $t(`projects.${this.$route.params.id}.subtitle`) }}</h2>
 					<div class="border"></div>
-					<button @click="ChangeDescription">{{description}}</button>
+					<button @click="ChangeDescription">{{(description == "description")?"Mostra descrizione tecnica": "Mostra descrizione"}}</button>
 				</div>
 				<div class="content">
-					<!-- <YoutubePlayer class="player" /> -->
                     <Carousel :datas="$tm(`projects.${this.$route.params.id}.images`)" class="carousel" />
 					<p v-if="description == 'description'">{{ $t(`projects.${this.$route.params.id}.description`) }}</p>
 					<p v-else>{{ $t(`projects.${this.$route.params.id}.technicaldescription`) }}</p>
 				</div>
                 
+                <YoutubePlayer class="player" />
 				<a :href="$t(`projects.${this.$route.params.id}.githublink`)">
 					<font-awesome-icon icon="fa-brands fa-github" />
 				</a>
@@ -39,7 +39,7 @@ export default {
 		return {
 			images: ['ciccio', 'pino', 'filberto'],
 			imagesaaaa: this.$tm(`projects.${this.$route.params.id}.tags`),
-			description: 'technicaldescription'
+			description: 'description'
 		}
 	},
 	methods: {
@@ -104,6 +104,12 @@ export default {
 				flex-grow: 2;
 				margin: 0 20px;
 			}
+            button{
+                border-radius: 10px;
+                border: 2px solid grey;
+                background-color: bisque;
+                padding: 3px 10px;
+            }
 		}
 		.content{
 			display: flex;

@@ -7,6 +7,7 @@
         <!-- <router-link to="/project">{{$t("nav.project")}}</router-link> -->
         <router-link :to="{name: 'project', params: {id:'portfolio'}}">{{$t("nav.portfolio")}}</router-link>
         <router-link :to="{name: 'project', params: {id:'snake'}}">{{$t("nav.snake")}}</router-link>
+        <Dropdown :datas="$tm(`test`)" />
       </div>
       <div class="nav__end">
       <p class="user-greeting">
@@ -19,8 +20,9 @@
 
   <script>
   import LocaleSwitcher from "@/components/LocaleSwitcher"
+import Dropdown from "./Dropdown.vue";
   export default {
-    components: { LocaleSwitcher }
+    components: { LocaleSwitcher, Dropdown }
   }
   </script>
   
