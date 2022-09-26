@@ -10,6 +10,6 @@
   #footer {
     text-align: center;
     padding-bottom: 1rem;
-    background-color: aqua;
+    background-color: var(--background-color-primary);
   }
   </style>
