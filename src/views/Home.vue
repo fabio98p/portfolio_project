@@ -1,15 +1,60 @@
 <template>
-    <div class="home">
-        <h1 v-t="'app.title'" />
-      <Cards />
-    </div>
-  </template>
-  <script>
-  import Cards from "../components/Cards.vue"
-  export default {
-    name: "home",
-    components: {
-      Cards
+	<div id="homepage">
+		<h1 class="name">{{ $t('home.name') }}</h1>
+		<div class="selfdescription">{{ $t('home.selfdescription') }}</div>
+		<div class="mainsproject">
+			<h2>{{ $t('home.mainsproject.introduction') }}</h2>
+			<ul>
+				<li v-for="project of $tm(`home.mainsproject.list`)">
+					<ProjectCard :project="$tm(`projects.${project.source}`)"></ProjectCard>
+				</li>
+			</ul>
+		</div>
+		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+	</div>
+</template>
+<script>
+import ProjectCard from '@/components/Cards/ProjectCard.vue'
+export default {
+	name: 'home',
+	components: {
+		ProjectCard
+	},
+	methods: {
+		aaa(a) {
+			console.log(a)
+		}
+	}
+}
+</script>
+<style scoped lang="scss">
+#homepage {
+	background-color: lightblue;
+
+	.name {
+		margin: 0 0 30px 0;
+		padding-top: 30px;
+		text-align: center;
+		color: white;
+		font-size: 110px;
+		text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbbbbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaaaaa, 0 6px 1px rgba(0, 0, 0, 0.1),
+			0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25),
+			0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+	}
+	.selfdescription {
+		width: 90%;
+		margin: 0 auto;
+		font-size: 23px;
+	}
+    .mainsproject{
+        margin-top: 80px;
+        ul {
+            padding-left: 0;
+            li {
+                margin: 10px;
+                list-style: none;
+            }
+        }
     }
-  }
-  </script>
+}
+</style>

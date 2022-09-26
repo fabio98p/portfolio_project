@@ -48,6 +48,7 @@ export default {
         transform: translate(-50%, 0);
 
         background-color: white;
+        border: 1px solid black;
         padding: 10px;
         border-radius: 20px;
         li{

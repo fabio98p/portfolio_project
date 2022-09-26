@@ -64,8 +64,6 @@ export default {
 <style scoped lang="scss">
 @import '../master.scss';
 #project {
-	width: 70%;
-	margin: 0 auto;
 	background-color: lightblue;
 
 	display: flex;

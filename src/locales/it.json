@@ -1,117 +1,198 @@
 {
-	"app": {
-		"title": "Caffe internazionale"
-	},
 	"nav": {
 		"home": "Casa",
 		"about": "Riguardo a",
-        "project": "Progetto",
-        "portfolio": "portfolio",
-        "snake": "snake"
+		"project": "Progetto",
+		"portfolio": "portfolio",
+		"snake": "snake"
 	},
-    "test": {
-        "titledropdown": "progetti",
-        "bodydropdown":[
-            {
-                "text": "portfolio",
-                "link": "portfolio"
-            },
-            {
-                "text": "snake",
-                "link": "snake"
-            }
-        ]
-    },
+	"home": {
+		"name": "Parisi Fabio",
+		"title": "Caffe internazionale",
+		"selfdescription": "Ciao a tutti e benvenuti nel mio Portfolio, io sono Parisi Fabio ho 24 anni e sono un Jr. Full Stack Web Developer (ovvero un programmatore web)",
+		"mainsproject": {
+			"introduction": "qui sotto i progetti di cui vado piu fiero:",
+			"list": ["portfolio", "snake"]
+		}
+	},
+	"aboutme": {
+		"workexpirience": {
+			"name": "Esperienza",
+			"experiences": [
+				{
+					"title": "Full Stack Developer",
+					"company": "Saidea",
+					"typeofcontract": "A tempo pieno",
+					"statdate": "Nov 2021",
+					"enddate": "Mag 2022",
+					"duration": "6 Mesi",
+					"location": "Trentino-AltoAdice, Italia",
+					"description": "Sviluppo un sito gestionale uttilizzando di base per il front-end template Knockout integrato con Telerik, JQuery e Bootstrap, e per il back-end c# con il framework .net con struttura mvc. Sviluppo della parte per il login e la registrazione per un sito gestionale"
+				},
+				{
+					"title": "Muratore",
+					"company": "T.P.R Global service",
+					"typeofcontract": "A tempo pieno",
+					"statdate": "lug 2020",
+					"enddate": " set 2020",
+					"duration": "3 mesi",
+					"location": "Bolzano, Trentino-Alto Adige, Italia",
+					"description": ""
+				},
+				{
+					"title": "Elettricista",
+					"company": "MONFREDINI FAUSTO S.R.L",
+					"typeofcontract": "A tempo pieno",
+					"statdate": "feb 2019",
+					"enddate": "giu 20202",
+					"duration": "1 anno 5 mesi",
+					"location": "Trentino-AltoAdice, Italia",
+					"description": "Lavorato come elettricista sul cantiere Lefay resort ed altri cantieri minori"
+				},
+				{
+					"title": "Elettricista",
+					"company": "SG Elettrica",
+					"typeofcontract": "A tempo pieno",
+					"statdate": "nov 2018",
+					"enddate": "dic 2018",
+					"duration": "2 mesi",
+					"location": "Isola nei Caraibi",
+					"description": ""
+				},
+				{
+					"title": "Manutentore",
+					"company": "TESSILQUATTRO S.P.A.",
+					"typeofcontract": "A tempo pieno",
+					"statdate": "nov 2016",
+					"enddate": "mar 2017",
+					"duration": "5 mesi",
+					"location": "Trentino-AltoAdice, Italia",
+					"description": ""
+				}
+			]
+		},
+        "training": {
+			"name": "Formazione",
+			"experiences": [
+				{
+                    "company": "Umana FormaUmana Forma",
+					"title": "Programmazione informatica",
+					"typeofcontract": "A tempo pieno",
+					"statdate": "set 2021",
+					"enddate": "nov 2021",
+					"duration": "2 Mesi",
+					"location": "Trentino-AltoAdice, Italia",
+					"description": "Attività e associazioni: Programmazione ad oggetti c#, con i relativi framework .net tra cui ado.net, entity framework e asp.net con la struttura mvc."
+				},
+                {
+                    "company": "Boolean CareersBoolean Careers",
+					"title": "Corso Full Stack Developera",
+					"typeofcontract": "A tempo pieno",
+					"statdate": "gen 2021",
+					"enddate": "giu 2021",
+					"duration": "6 Mesi",
+					"location": "Trentino-AltoAdice, Italia",
+					"description": "Attività e associazioni: Creazione replicazione di siti gia' esistenti con l'obiettivo di imparare i principali linguaggi di programmazione, markup e stylesheet."
+				},
+                {
+                    "company": "CFP Villazzano",
+					"title": "Diploma di maturita'",
+					"typeofcontract": "A tempo pieno",
+					"statdate": "2017",
+					"enddate": "2018",
+					"duration": "6 Mesi",
+					"location": "Trentino-AltoAdice, Italia",
+					"description": "diploma, manutenzione e assistenza tecnicadiploma, manutenzione e assistenza tecnica, Votazione: 77/100"
+				}
+			]
+		}
+	},
+	"test": {
+		"titledropdown": "progetti",
+		"bodydropdown": [
+			{
+				"text": "portfolio",
+				"link": "portfolio"
+			},
+			{
+				"text": "snake",
+				"link": "snake"
+			}
+		]
+	},
 	"user_greeting": "Ciao, {name}",
 	"footer": "costruito con vye e vuei18n<br/> supportato da un eccessiva dose di caffe",
 	"card": {
 		"likes": "nessuno ❤️ ancora 😕 | {n} persona ❤️ questo | {n} persone ❤️ qyesto"
 	},
-    "projects":{
-        "portfolio": {
-            "id": 0,
-            "name": "portfolio ita",
-            "title": "Portfolio Project",
+	"projects": {
+		"portfolio": {
+			"id": 0,
+			"name": "portfolio ita",
+			"title": "Portfolio Project",
 			"subtitle": "portfolio creato da parisi fabio",
-            "description": "Questo projecto e' stato creato interamente da ma dalla a alla z grazie all'utilizzo di un potente framework ovvero Vue3, questo portfolio è stato fatto per racchiudere tutti i miei progetti e poterli mostrare in modo semplice e veloce",
-            "technicaldescription": "Questo progetto racchiude tutti i miei progetti. Per creare questo progetto ho usato come base vue3 e vue router, per quanto riguarda lo stile ho deciso di utilizzare il preprocessore scss per maggiore facilita nello scrivere lo stile rispetto al classico css invece per quando riguarda la programmazione ho preferito optare per javascript invece di typescript perche ho pensato che per un progetto cosi piccolo non sarebbe stato necessario utilizzarlo, in seguito ho studiato come implementare i18next che mi permette di poter far comprendere a chiunque quello che voglio comunicare",
-            "githublink": "https://github.com/fabio98p/portfolio_project",
-            "deploylink": "",
-            "idvideo": "qGk4E9ss95s",
-            "images": [
-                {
-                    "id":1,
-                    "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/640px-Image_created_with_a_mobile_phone.png",
-                    "type": "image"
-                },
-                {
-                    "id": 2,
-                    "link": "https://upload.wikimedia.org/wikipedia/commons/5/5c/640x480-afframont_ujamondrone_leitosa.JPG",
-                    "type": "image"
-                },
-                {
-                    "id": 3,
-                    "link": "https://img.favcars.com/dodge/mixed/dodge_mixed__pictures_1_640x480.jpg",
-                    "type": "image"
-                },
-                {
-                    "id": 4,
-                    "link": "http://smiletec.weebly.com/uploads/2/4/9/4/24945404/4905376_orig.jpg",
-                    "type": "image"
-                },
-                {
-                    "id": 5,
-                    "link": "https://upload.wikimedia.org/wikipedia/commons/9/91/P_Vega_de_Calardos_%28640x480%29.jpg",
-                    "type": "image"
-                }
-            ],
-            "tags": [
-				"html",
-				"js",
-                "vue",
-                "scss",
-                "i18n"
-            ]
-        },
-        "snake": {
-            "id": 0,
-            "name": "snake ita",
-            "title": "snake of Parisi Fabio ita",
+			"description": "Questo projecto e' stato creato interamente da ma dalla a alla z grazie all'utilizzo di un potente framework ovvero Vue3, questo portfolio è stato fatto per racchiudere tutti i miei progetti e poterli mostrare in modo semplice e veloce",
+			"shortdescription": "Questo e' il progetto del mio portfolio, per maggiori informazioni premi qua",
+			"technicaldescription": "Questo progetto racchiude tutti i miei progetti. Per creare questo progetto ho usato come base vue3 e vue router, per quanto riguarda lo stile ho deciso di utilizzare il preprocessore scss per maggiore facilita nello scrivere lo stile rispetto al classico css invece per quando riguarda la programmazione ho preferito optare per javascript invece di typescript perche ho pensato che per un progetto cosi piccolo non sarebbe stato necessario utilizzarlo, in seguito ho studiato come implementare i18next che mi permette di poter far comprendere a chiunque quello che voglio comunicare",
+			"githublink": "https://github.com/fabio98p/portfolio_project",
+			"deploylink": "",
+			"idvideo": "qGk4E9ss95s",
+			"images": [
+				{
+					"id": 1,
+					"link": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/640px-Image_created_with_a_mobile_phone.png",
+					"type": "image"
+				},
+				{
+					"id": 2,
+					"link": "https://upload.wikimedia.org/wikipedia/commons/5/5c/640x480-afframont_ujamondrone_leitosa.JPG",
+					"type": "image"
+				},
+				{
+					"id": 3,
+					"link": "https://img.favcars.com/dodge/mixed/dodge_mixed__pictures_1_640x480.jpg",
+					"type": "image"
+				},
+				{
+					"id": 4,
+					"link": "http://smiletec.weebly.com/uploads/2/4/9/4/24945404/4905376_orig.jpg",
+					"type": "image"
+				},
+				{
+					"id": 5,
+					"link": "https://upload.wikimedia.org/wikipedia/commons/9/91/P_Vega_de_Calardos_%28640x480%29.jpg",
+					"type": "image"
+				}
+			],
+			"tags": ["html", "js", "vue", "scss", "i18n"],
+			"route": "portfolio"
+		},
+		"snake": {
+			"id": 0,
+			"name": "snake ita",
+			"title": "snake of Parisi Fabio ita",
 			"subtitle": "sottotitolo",
-            "description": "this project is made by fabio Parisi ita",
-            "technicaldescription": "lorem ipsum ita",
-            "githublink": "https://github.com/fabio98p/snake",
-            "deploylink": "",
-            "idvideo": "G1IbRujko-A",
-            "images": [
-                {
-                    "id":1,
-                    "link": "../assets/test.png",
-                    "type": "image"
-                },
-                {
-                    "id": 2,
-                    "link": "https://upload.wikimedia.org/wikipedia/commons/9/91/P_Vega_de_Calardos_%28640x480%29.jpg",
-                    "type": "image"
-                }
-            ],
-            "tags": [
-                "html",
-                "css",
-                "js"
-            ]
-        }
-    },
-    "tags": [
-        "html",
-        "css",
-        "scss",
-        "js",
-        "ts",
-        "jquery",
-        "react",
-        "vue",
-        "angular",
-        "i18n"
-    ]
+			"description": "this project is made by fabio Parisi ita",
+			"shortdescription": "In questo progetto ho voluto ricreare snake da 0",
+			"technicaldescription": "lorem ipsum ita",
+			"githublink": "https://github.com/fabio98p/snake",
+			"deploylink": "",
+			"idvideo": "G1IbRujko-A",
+			"images": [
+				{
+					"id": 1,
+					"link": "../assets/test.png",
+					"type": "image"
+				},
+				{
+					"id": 2,
+					"link": "https://upload.wikimedia.org/wikipedia/commons/9/91/P_Vega_de_Calardos_%28640x480%29.jpg",
+					"type": "image"
+				}
+			],
+			"tags": ["html", "css", "js"],
+			"route": "snake"
+		}
+	},
+	"tags": ["html", "css", "scss", "js", "ts", "jquery", "react", "vue", "angular", "i18n"]
 }

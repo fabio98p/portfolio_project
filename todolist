@@ -5,3 +5,12 @@ queste card saranno da inserire in delle pagine apposite che descrivono delle co
 ex. pagina cronologica stile linkedin dove mostro tutto quello che ho fatto in ordine cronologico
 ex2. pagina dove espongo i vari progetti per una specifica tecnologia es. vue react angular blaxor ecc.
 
+inserire nel componente about us tutte le info gia scritte nel json
+
+sistemare le card progetti
+
+creare slider per ciclare i progetti invece di inserirli uno sotto l'altro
+
+inserire nel componente progetti i link per collaborazioni/siti/social/altro
+
+rimuovere robe dalla navbar
