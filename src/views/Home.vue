@@ -10,7 +10,6 @@
 				</li>
 			</ul>
 		</div>
-		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 	</div>
 </template>
 <script>
@@ -30,6 +29,7 @@ export default {
 <style scoped lang="scss">
 #homepage {
 	background-color: lightblue;
+    min-height: 100%;
 
 	.name {
 		margin: 0 0 30px 0;

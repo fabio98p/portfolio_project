@@ -16,11 +16,14 @@
 		}
 	},
 	"aboutme": {
+        "title": "Sono Parisi Fabio",
+        "jobwork": "Jr. Full Stack Web Developer",
+        "description": "Sono Parisi Fabio, ho 24 anni e vengo dall'italia",
 		"workexpirience": {
 			"name": "Esperienza",
-			"experiences": [
+			"experienceslist": [
 				{
-					"title": "Full Stack Developer",
+					"role": "Full Stack Developer",
 					"company": "Saidea",
 					"typeofcontract": "A tempo pieno",
 					"statdate": "Nov 2021",
@@ -30,7 +33,7 @@
 					"description": "Sviluppo un sito gestionale uttilizzando di base per il front-end template Knockout integrato con Telerik, JQuery e Bootstrap, e per il back-end c# con il framework .net con struttura mvc. Sviluppo della parte per il login e la registrazione per un sito gestionale"
 				},
 				{
-					"title": "Muratore",
+					"role": "Muratore",
 					"company": "T.P.R Global service",
 					"typeofcontract": "A tempo pieno",
 					"statdate": "lug 2020",
@@ -40,7 +43,7 @@
 					"description": ""
 				},
 				{
-					"title": "Elettricista",
+					"role": "Elettricista",
 					"company": "MONFREDINI FAUSTO S.R.L",
 					"typeofcontract": "A tempo pieno",
 					"statdate": "feb 2019",
@@ -50,7 +53,7 @@
 					"description": "Lavorato come elettricista sul cantiere Lefay resort ed altri cantieri minori"
 				},
 				{
-					"title": "Elettricista",
+					"role": "Elettricista",
 					"company": "SG Elettrica",
 					"typeofcontract": "A tempo pieno",
 					"statdate": "nov 2018",
@@ -60,9 +63,9 @@
 					"description": ""
 				},
 				{
-					"title": "Manutentore",
+					"role": "Electrician",
 					"company": "TESSILQUATTRO S.P.A.",
-					"typeofcontract": "A tempo pieno",
+					"typeofcontract": "stage",
 					"statdate": "nov 2016",
 					"enddate": "mar 2017",
 					"duration": "5 mesi",
@@ -71,12 +74,12 @@
 				}
 			]
 		},
-        "training": {
+        "trainings": {
 			"name": "Formazione",
-			"experiences": [
+			"experienceslist": [
 				{
                     "company": "Umana FormaUmana Forma",
-					"title": "Programmazione informatica",
+					"role": "Programmazione informatica",
 					"typeofcontract": "A tempo pieno",
 					"statdate": "set 2021",
 					"enddate": "nov 2021",
@@ -86,7 +89,7 @@
 				},
                 {
                     "company": "Boolean CareersBoolean Careers",
-					"title": "Corso Full Stack Developera",
+					"role": "Corso Full Stack Developera",
 					"typeofcontract": "A tempo pieno",
 					"statdate": "gen 2021",
 					"enddate": "giu 2021",
@@ -96,7 +99,7 @@
 				},
                 {
                     "company": "CFP Villazzano",
-					"title": "Diploma di maturita'",
+					"role": "Diploma di maturita'",
 					"typeofcontract": "A tempo pieno",
 					"statdate": "2017",
 					"enddate": "2018",

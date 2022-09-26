@@ -9,6 +9,101 @@
         "portfolio": "portfolio",
         "snake": "snake"
 	},
+    "aboutme": {
+        "title": "Sono Parisi Fabio",
+        "jobwork": "Jr. Full Stack Web Developer",
+        "description": "Sono Parisi Fabio, ho 24 anni e vengo dall'Italiy",
+		"workexpirience": {
+			"name": "Esperienza",
+			"experienceslist": [
+				{
+					"role": "Full Stack Developer",
+					"company": "Saidea",
+					"typeofcontract": "Full Time",
+					"statdate": "Nov 2021",
+					"enddate": "May 2022",
+					"duration": "6 Month",
+					"location": "Trentino-AltoAdice, Italiy",
+					"description": "I develop a management site using for front-end Knockout integrated with Telerik, JQuery and Bootstrap, and for back-end c# with .net framework with mvc structure"
+				},
+				{
+					"role": "Bricklayer",
+					"company": "T.P.R Global service",
+					"typeofcontract": "Full Time",
+					"statdate": "Jul 2020",
+					"enddate": " Sep 2020",
+					"duration": "3 Month",
+					"location": "Bolzano, Trentino-Alto Adige, Italiy",
+					"description": ""
+				},
+				{
+					"role": "Electrician",
+					"company": "MONFREDINI FAUSTO S.R.L",
+					"typeofcontract": "Full Time",
+					"statdate": "Feb 2019",
+					"enddate": "Jun 20202",
+					"duration": "1 year 5 Month",
+					"location": "Trentino-AltoAdice, Italiy",
+					"description": "Worked as an electrician on Lefay resort in Pinzolo and other minor construction sites"
+				},
+				{
+					"role": "Electrician",
+					"company": "SG Elettrica",
+					"typeofcontract": "Full Time",
+					"statdate": "Nov 2018",
+					"enddate": "Dec 2018",
+					"duration": "2 Month",
+					"location": " Caribbean Island",
+					"description": ""
+				},
+				{
+					"role": "Electrician",
+					"company": "TESSILQUATTRO S.P.A.",
+					"typeofcontract": "Internship",
+					"statdate": "Nov 2016",
+					"enddate": "Mar 2017",
+					"duration": "5 Month",
+					"location": "Trentino-AltoAdice, Italiy",
+					"description": ""
+				}
+			]
+		},
+        "trainings": {
+			"name": "Formazione",
+			"experienceslist": [
+				{
+                    "company": "Umana Forma",
+					"role": "Developer",
+					"typeofcontract": "Full Time",
+					"statdate": "Sep 2021",
+					"enddate": "Nov 2021",
+					"duration": "2 Month",
+					"location": "Trentino-AltoAdice, Italiy",
+					"description": "Object-oriented c# programming, with .net frameworks including ado.net, entity framework and asp.net with the mvc framework."
+				},
+                {
+                    "company": "Boolean CareersBoolean Careers",
+					"role": "Course Full Stack Developer",
+					"typeofcontract": "Full Time",
+					"statdate": "Jan 2021",
+					"enddate": "Jun 2021",
+					"duration": "6 Month",
+					"location": "Trentino-AltoAdice, Italiy",
+					"description": "Theory and practice of major markup languages, stylesheets, programming and database with popular plugins including: for markup and stylesheet: html, css, scss, boostrapp. for programming adn database: js, jquery, vue, php, mysql, laravel."
+				},
+                {
+                    "company": "CFP Villazzano",
+					"role": "High school diploma",
+					"typeofcontract": "Full Time",
+					"statdate": "2017",
+					"enddate": "2018",
+					"duration": "6 Month",
+					"location": "Trentino-AltoAdice, Italiy",
+					"description": "High school diploma, maintence and technical support, vote: 77/100"
+				}
+			]
+		}
+	},
     "test": {
         "titledropdown": "project",
         "bodydropdown":[
