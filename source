@@ -36,3 +36,7 @@ in the end of the process of take a item add .source
 link dropdown:
 https://codesandbox.io/s/q7j0mjvwz9?file=/components/FilterableDropdown.vue
 https://stackoverflow.com/questions/36170425/detect-click-outside-element#answer-64391475
+
+dark mode source:
+https://dev.to/tqbit/create-your-own-dark-mode-toggle-component-with-vue-js-1284
+https://codesandbox.io/s/elegant-noether-2ed4u2?file=/src/App.vue:461-1381

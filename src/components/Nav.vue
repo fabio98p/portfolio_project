@@ -14,6 +14,7 @@
         {{ $t("user_greeting", { name: "Adam" }) }}
       </p>
       <LocaleSwitcher />
+      <DarkModeSwitch />
     </div>
     </div>
   </template>
@@ -21,8 +22,9 @@
   <script>
   import LocaleSwitcher from "@/components/LocaleSwitcher"
 import Dropdown from "./Dropdown.vue";
+import DarkModeSwitch from "./DarkModeSwitch.vue";
   export default {
-    components: { LocaleSwitcher, Dropdown }
+    components: { LocaleSwitcher, Dropdown, DarkModeSwitch }
   }
   </script>
   
@@ -34,7 +36,7 @@ import Dropdown from "./Dropdown.vue";
     text-align: left;
     padding: 1rem;
     color: #fff;
-    background-color: #3d536a;
+    background-color: var(--bg-navbar);
   }
   .nav__start,
   .nav__end {
