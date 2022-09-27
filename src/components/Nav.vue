@@ -4,9 +4,7 @@
         <img alt="Vue logo" src="../assets/logo.png" />
         <router-link to="/">{{$t("nav.home")}}</router-link>
         <router-link to="/about">{{$t("nav.about")}}</router-link>
-        <!-- <router-link to="/project">{{$t("nav.project")}}</router-link> -->
-        <router-link :to="{name: 'project', params: {id:'portfolio'}}">{{$t("nav.portfolio")}}</router-link>
-        <router-link :to="{name: 'project', params: {id:'snake'}}">{{$t("nav.snake")}}</router-link>
+        <router-link :to="{name: 'tag', params: {id: 'html'}}" class="link">html</router-link>
         <Dropdown :datas="$tm(`test`)" />
       </div>
       <div class="nav__end">
