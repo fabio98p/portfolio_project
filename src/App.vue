@@ -49,6 +49,10 @@ ul {
 		list-style: none;
 	}
 }
+a{
+    text-decoration: none;
+    color: black;
+}
 /* Define styles for the default root window element */
 :root {
 	--background-color-primary: #ebebeb;

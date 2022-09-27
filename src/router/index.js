@@ -27,7 +27,7 @@ const routes = [
 		// path: '/project/:slag',
 		path: '/tag/:id',
 		name: 'tag',
-		component: () => import(/* webpackChunkName: "project" */ '@/views/TagPage.vue')
+		component: () => import(/* webpackChunkName: "tag" */ '@/views/TagPageView.vue')
 	}
 ]
 

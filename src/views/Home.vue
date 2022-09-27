@@ -1,12 +1,12 @@
 <template>
 	<div id="homepage">
-		<h1 class="name">{{ $t('home.name') }}</h1>
+		<h1 @click="aaa" class="name">{{ $t('home.name') }}</h1>
 		<div class="selfdescription">{{ $t('home.selfdescription') }}</div>
 		<div class="mainsproject">
 			<h2>{{ $t('home.mainsproject.introduction') }}</h2>
 			<ul>
-				<li v-for="project of $tm(`home.mainsproject.list`)">
-					<ProjectCard :project="$tm(`projects.${project.source}`)"></ProjectCard>
+				<li v-for="project of projects">
+					<ProjectCard :project="project"></ProjectCard>
 				</li>
 			</ul>
 		</div>
@@ -19,8 +19,14 @@ export default {
 	components: {
 		ProjectCard
 	},
+    data() {
+		return {
+			projects: this.$tm('projects').filter(project => this.$tm(`home.mainsproject.list`).filter( projectname => projectname.source == project.id.source)),
+		}
+	},
 	methods: {
 		aaa(a) {
+            debugger
 			console.log(a)
 		}
 	}

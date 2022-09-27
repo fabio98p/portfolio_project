@@ -7,7 +7,7 @@
                 </h1>
                 <div class="tags">
                     <div class="tag" :class="tag.source" v-for="tag in project.tags">
-                        {{ tag.source }}
+                        <router-link :to="{name: 'tag', params: {id: `${tag.source}`}}" class="link">{{ tag.source }}</router-link>
                     </div>
                 </div>
             </div>

@@ -16,9 +16,9 @@
 		}
 	},
 	"aboutme": {
-        "title": "Sono Parisi Fabio",
-        "jobwork": "Jr. Full Stack Web Developer",
-        "description": "Sono Parisi Fabio, ho 24 anni e vengo dall'italia",
+		"title": "Sono Parisi Fabio",
+		"jobwork": "Jr. Full Stack Web Developer",
+		"description": "Sono Parisi Fabio, ho 24 anni e vengo dall'italia",
 		"workexpirience": {
 			"name": "Esperienza",
 			"experienceslist": [
@@ -74,11 +74,11 @@
 				}
 			]
 		},
-        "trainings": {
+		"trainings": {
 			"name": "Formazione",
 			"experienceslist": [
 				{
-                    "company": "Umana FormaUmana Forma",
+					"company": "Umana FormaUmana Forma",
 					"role": "Programmazione informatica",
 					"typeofcontract": "A tempo pieno",
 					"statdate": "set 2021",
@@ -87,8 +87,8 @@
 					"location": "Trentino-AltoAdice, Italia",
 					"description": "Attività e associazioni: Programmazione ad oggetti c#, con i relativi framework .net tra cui ado.net, entity framework e asp.net con la struttura mvc."
 				},
-                {
-                    "company": "Boolean CareersBoolean Careers",
+				{
+					"company": "Boolean CareersBoolean Careers",
 					"role": "Corso Full Stack Developera",
 					"typeofcontract": "A tempo pieno",
 					"statdate": "gen 2021",
@@ -97,8 +97,8 @@
 					"location": "Trentino-AltoAdice, Italia",
 					"description": "Attività e associazioni: Creazione replicazione di siti gia' esistenti con l'obiettivo di imparare i principali linguaggi di programmazione, markup e stylesheet."
 				},
-                {
-                    "company": "CFP Villazzano",
+				{
+					"company": "CFP Villazzano",
 					"role": "Diploma di maturita'",
 					"typeofcontract": "A tempo pieno",
 					"statdate": "2017",
@@ -125,9 +125,9 @@
 	},
 	"user_greeting": "Ciao, {name}",
 	"footer": "costruito con vye e vuei18n<br/> supportato da un eccessiva dose di caffe",
-	"projects": {
-		"portfolio": {
-			"id": 0,
+	"projects": [
+		{
+			"id": "portfolio",
 			"name": "portfolio ita",
 			"title": "Portfolio Project",
 			"subtitle": "portfolio creato da parisi fabio",
@@ -167,8 +167,8 @@
 			"tags": ["html", "js", "vue", "scss", "i18n"],
 			"route": "portfolio"
 		},
-		"snake": {
-			"id": 0,
+		{
+			"id": "snake",
 			"name": "snake ita",
 			"title": "snake of Parisi Fabio ita",
 			"subtitle": "sottotitolo",
@@ -193,6 +193,6 @@
 			"tags": ["html", "css", "js"],
 			"route": "snake"
 		}
-	},
+	],
 	"tags": ["html", "css", "scss", "js", "ts", "jquery", "react", "vue", "angular", "i18n"]
 }

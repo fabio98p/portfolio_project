@@ -5,6 +5,8 @@
         <router-link to="/">{{$t("nav.home")}}</router-link>
         <router-link to="/about">{{$t("nav.about")}}</router-link>
         <router-link :to="{name: 'tag', params: {id: 'html'}}" class="link">html</router-link>
+        <router-link :to="{name: 'tag', params: {id: 'css'}}" class="link">css</router-link>
+        <router-link :to="{name: 'tag', params: {id: 'vue'}}" class="link">vue</router-link>
         <Dropdown :datas="$tm(`test`)" />
       </div>
       <div class="nav__end">

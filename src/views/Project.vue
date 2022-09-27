@@ -2,27 +2,27 @@
 	<section id="project">
 		<div>
 			<header>
-				<h1>{{ $t(`projects.${this.$route.params.id}.title`) }}</h1>
+				<h1>{{ project.title.source }}</h1>
 				<div class="tags">
-					<div class="tag" :class="tag.source" v-for="tag in $tm(`projects.${this.$route.params.id}.tags`)">
-						{{ tag.source }}
+					<div class="tag" :class="tag.source" v-for="tag in project.tags">
+                        <router-link :to="{name: 'tag', params: {id: `${tag.source}`}}" class="link">{{ tag.source }}</router-link>
 					</div>
 				</div>
 			</header>
 			<main>
 				<div class="subtitle">
-					<h2>{{ $t(`projects.${this.$route.params.id}.subtitle`) }}</h2>
+					<h2>{{project.subtitle.source }}</h2>
 					<div class="border"></div>
 					<button @click="ChangeDescription">{{(description == "description")?"Mostra descrizione tecnica": "Mostra descrizione"}}</button>
 				</div>
 				<div class="content">
-                    <Carousel :datas="$tm(`projects.${this.$route.params.id}.images`)" class="carousel" />
-					<p v-if="description == 'description'">{{ $t(`projects.${this.$route.params.id}.description`) }}</p>
-					<p v-else>{{ $t(`projects.${this.$route.params.id}.technicaldescription`) }}</p>
+                    <Carousel :datas="project.images" class="carousel" />
+					<p v-if="description == 'description'">{{ project.description.source }}</p>
+					<p v-else>{{ project.technicaldescription.source }}</p>
 				</div>
                 
                 <YoutubePlayer class="player" />
-				<a :href="$t(`projects.${this.$route.params.id}.githublink`)">
+				<a :href="project.githublink.source">
 					<font-awesome-icon icon="fa-brands fa-github" />
 				</a>
 			</main>
@@ -37,7 +37,7 @@ export default {
 	components: { YoutubePlayer, Carousel },
 	data() {
 		return {
-			images: ['ciccio', 'pino', 'filberto'],
+			project: this.$tm('projects').filter(project => project.id.source == this.$route.params.id)[0],
 			imagesaaaa: this.$tm(`projects.${this.$route.params.id}.tags`),
 			description: 'description'
 		}
