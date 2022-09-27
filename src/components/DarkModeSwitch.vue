@@ -85,8 +85,8 @@
     justify-content: space-between;
     width: var(--element-size);
     z-index: 1;
-    height: 37px;
-    width: 76px;
+        height: 37px;
+    width: 78px;
   }
   
   .switch-toggle {

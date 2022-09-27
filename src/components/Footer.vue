@@ -6,10 +6,14 @@
     </section>
   </template>
 
-  <style scoped>
+  <style scoped lang="scss">
   #footer {
     text-align: center;
     padding-bottom: 1rem;
     background-color: var(--bg-footer);
+    p{
+        padding: 15.5px 0;
+        margin: 0;
+    }
   }
   </style>
