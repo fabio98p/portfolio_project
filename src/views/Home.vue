@@ -4,21 +4,24 @@
 		<div class="selfdescription">{{ $t('home.selfdescription') }}</div>
 		<div class="mainsproject">
 			<h2>{{ $t('home.mainsproject.introduction') }}</h2>
-			<ul>
+			<!-- <ul>
 				<li v-for="project of projects">
 					<ProjectCard :project="project"></ProjectCard>
 				</li>
-			</ul>
+			</ul> -->
+            <ProjectCardCarousel :projects="projects" />
 		</div>
 	</div>
 </template>
 <script>
 import ProjectCard from '@/components/Cards/ProjectCard.vue'
+import ProjectCardCarousel from '@/components/Carousel/ProjectCardCarousel.vue'
 export default {
 	name: 'home',
 	components: {
-		ProjectCard
-	},
+    ProjectCard,
+    ProjectCardCarousel
+},
     data() {
 		return {
 			projects: this.$tm('projects').filter(project => this.$tm(`home.mainsproject.list`).filter( projectname => projectname.source == project.id.source)),

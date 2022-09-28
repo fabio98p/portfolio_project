@@ -1,52 +1,56 @@
 <template>
-	<div id="cardCarousel">
+	<div id="projectCardCarousel">
 		<div class="back" @click="Back">
 			<font-awesome-icon icon="fa-solid fa-chevron-left" />
 		</div>
-		<div v-for="data in datas" class="image">
-			<img :src="data.link.source" v-if="data.id == this.actualImg" @click="GetImageById(data)" />
+		<div v-for="project in projects" class="image">
+			<ProjectCardForCarousel :project="project" v-if="GetCardIdByElement(project) == this.actualCard" />
 		</div>
 		<div class="front" @click="Front">
 			<font-awesome-icon icon="fa-solid fa-chevron-right" />
 		</div>
         <div class="dots">
-            <div class="dot" v-for="data in datas" :class="data.id == actualImg ? 'active': ''" @click="SetActualImgById(data.id)" ></div>
+            <div class="dot" v-for="project in projects"
+                :class="GetCardIdByElement(project) == actualCard ? 'active': ''"
+                @click="SetActualCardById(GetCardIdByElement(project))"
+            ></div>
         </div>
 	</div>
 </template>
 
 <script>
+import ProjectCardForCarousel from '../Cards/ProjectCardForCarousel.vue'
 export default {
-	name: 'cardCarousel',
+	name: 'projectCardCarousel',
 	data() {
 		return {
-			actualImg: 1
+			actualCard: 0
 		}
 	},
 	props: {
-		datas: Array
+		projects: Object
 	},
-	components: {},
+	components: {  ProjectCardForCarousel },
 	methods: {
 		Back() {
-			if (this.actualImg != 1) {
-				this.actualImg--
+            if (this.actualCard != 0) {
+                this.actualCard--
 			} else {
-				this.actualImg = this.datas.length
+                this.actualCard = this.projects.length -1
 			}
 		},
 		Front() {
-			if (this.actualImg != this.datas.length) {
-				this.actualImg++
+            if (this.actualCard != this.projects.length -1) {
+                this.actualCard++
 			} else {
-				this.actualImg = 1
+                this.actualCard = 0
 			}
 		},
-		GetImageById(data) {
-			console.log(data)
+		GetCardIdByElement(e) {
+			return this.projects.indexOf(e)
 		},
-        SetActualImgById(id){
-            this.actualImg = id
+        SetActualCardById(id){
+            this.actualCard = id
         }
 	}
 }
@@ -54,7 +58,7 @@ export default {
 <style lang="scss" scoped>
 @import '@/master.scss';
 
-#cardCarousel {
+#projectCardCarousel {
     border-radius: 30px;
     position: relative;
     overflow: hidden;

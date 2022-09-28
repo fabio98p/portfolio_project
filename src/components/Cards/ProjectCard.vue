@@ -1,9 +1,9 @@
 <template>
-    <router-link :to="{name: 'project', params: {id:`${project.route.source}`}}">
+    <router-link :to="{name: 'project', params: {id:`${project.card.route.source}`}}">
         <div id="projectCard">
             <div class="header">
                 <h1>
-                    {{ project.title.source }}
+                    {{ project.card.title.source }}
                 </h1>
                 <div class="tags">
                     <div class="tag" :class="tag.source" v-for="tag in project.tags">
@@ -11,7 +11,7 @@
                     </div>
                 </div>
             </div>
-            <div>{{ project.shortdescription.source }}</div>
+            <div>{{ project.card.shortdescription.source }}</div>
         </div>
     </router-link>
 </template>

@@ -2,7 +2,7 @@
 	<section id="project">
 		<div>
 			<header>
-				<h1>{{ project.title.source }}</h1>
+				<h1>{{ project.main.title.source }}</h1>
 				<div class="tags">
 					<div class="tag" :class="tag.source" v-for="tag in project.tags">
 						<router-link :to="{ name: 'tag', params: { id: `${tag.source}` } }" class="link">{{ tag.source }}</router-link>
@@ -11,20 +11,20 @@
 			</header>
 			<main>
 				<div class="subtitle">
-					<h2>{{ project.subtitle.source }}</h2>
+					<h2>{{ project.main.subtitle.source }}</h2>
 					<div class="border"></div>
 					<button @click="ChangeDescription">
 						{{ description == 'description' ? 'Mostra descrizione tecnica' : 'Mostra descrizione' }}
 					</button>
 				</div>
 				<div class="content">
-					<ImageCarousel :datas="project.images" class="carousel" />
-					<p v-if="description == 'description'">{{ project.description.source }}</p>
-					<p v-else>{{ project.technicaldescription.source }}</p>
+					<ImageCarousel :datas="project.main.images" class="carousel" />
+					<p v-if="description == 'description'">{{ project.main.description.source }}</p>
+					<p v-else>{{ project.main.technicaldescription.source }}</p>
 				</div>
 
-				<YoutubePlayer class="player" :idVideo="project.idvideo.source" />
-				<a :href="project.githublink.source">
+				<YoutubePlayer class="player" :idVideo="project.main.idvideo.source" />
+				<a :href="project.main.githublink.source">
 					<font-awesome-icon icon="fa-brands fa-github" />
 				</a>
 			</main>
