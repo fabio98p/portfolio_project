@@ -1,5 +1,5 @@
 <template>
-	<div class="carousel">
+	<div id="cardCarousel">
 		<div class="back" @click="Back">
 			<font-awesome-icon icon="fa-solid fa-chevron-left" />
 		</div>
@@ -10,16 +10,14 @@
 			<font-awesome-icon icon="fa-solid fa-chevron-right" />
 		</div>
         <div class="dots">
-            <div class="dot" v-for="data in datas" :class="data.id == actualImg ? 'active': ''" @click="SetActualImgById(data.id)" >
-
-            </div>
+            <div class="dot" v-for="data in datas" :class="data.id == actualImg ? 'active': ''" @click="SetActualImgById(data.id)" ></div>
         </div>
 	</div>
 </template>
 
 <script>
 export default {
-	name: 'carousel',
+	name: 'cardCarousel',
 	data() {
 		return {
 			actualImg: 1
@@ -54,9 +52,9 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-@import '../master.scss';
+@import '@/master.scss';
 
-.carousel {
+#cardCarousel {
     border-radius: 30px;
     position: relative;
     overflow: hidden;

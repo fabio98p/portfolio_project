@@ -3,7 +3,7 @@
 		<Youtube @change="stopCurrentVideo"
 		ref="youtube" 
 		:autoplay="0" 
-		:videoid="$t(`projects.${this.$route.params.id}.idvideo`)" :controls="1" 
+		:videoid="idVideo" :controls="1" 
 		:width="600" :height="400"
 		/>
 	</div>
@@ -20,7 +20,9 @@ export default {
         }
     },
 	components: {},
-
+	props: {
+		idVideo: String
+	},
 	methods: {
 		applyConfig() {
 			this.play = Object.assign(this.play, this.temp)

@@ -9,7 +9,7 @@
 	"home": {
 		"name": "Parisi Fabio",
 		"title": "Caffe internazionale",
-		"selfdescription": "Ciao a tutti e benvenuti nel mio Portfolio, io sono Parisi Fabio ho 24 anni e sono un Jr. Full Stack Web Developer (ovvero un programmatore web)",
+		"selfdescription": "Un Sito per domarli, un Sito per trovarli, Un Sito per ghermirli e nel buio incatenarli",
 		"mainsproject": {
 			"introduction": "qui sotto i progetti di cui vado piu fiero:",
 			"list": ["portfolio", "snake"]
@@ -167,30 +167,45 @@
 			"tags": ["html", "js", "vue", "scss", "i18n"],
 			"route": "portfolio"
 		},
-		{
+        {
 			"id": "snake",
 			"name": "snake ita",
-			"title": "snake of Parisi Fabio ita",
-			"subtitle": "sottotitolo",
-			"description": "this project is made by fabio Parisi ita",
-			"shortdescription": "In questo progetto ho voluto ricreare snake da 0",
-			"technicaldescription": "lorem ipsum ita",
+			"title": "snake Project",
+			"subtitle": "snake creato da parisi fabio",
+			"description": "Questo projecto e' stato creato interamente da ma dalla a alla z grazie all'utilizzo di un potente framework ovvero Vue3, questo snake è stato fatto per racchiudere tutti i miei progetti e poterli mostrare in modo semplice e veloce",
+			"shortdescription": "Questo e' il progetto del mio snake, per maggiori informazioni premi qua",
+			"technicaldescription": "Questo progetto racchiude tutti i miei progetti. Per creare questo progetto ho usato come base vue3 e vue router, per quanto riguarda lo stile ho deciso di utilizzare il preprocessore scss per maggiore facilita nello scrivere lo stile rispetto al classico css invece per quando riguarda la programmazione ho preferito optare per javascript invece di typescript perche ho pensato che per un progetto cosi piccolo non sarebbe stato necessario utilizzarlo, in seguito ho studiato come implementare i18next che mi permette di poter far comprendere a chiunque quello che voglio comunicare",
 			"githublink": "https://github.com/fabio98p/snake",
 			"deploylink": "",
-			"idvideo": "G1IbRujko-A",
+			"idvideo": "1nIcorC1tj8",
 			"images": [
 				{
 					"id": 1,
-					"link": "../assets/test.png",
+					"link": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/640px-Image_created_with_a_mobile_phone.png",
 					"type": "image"
 				},
 				{
 					"id": 2,
+					"link": "https://upload.wikimedia.org/wikipedia/commons/5/5c/640x480-afframont_ujamondrone_leitosa.JPG",
+					"type": "image"
+				},
+				{
+					"id": 3,
+					"link": "https://img.favcars.com/dodge/mixed/dodge_mixed__pictures_1_640x480.jpg",
+					"type": "image"
+				},
+				{
+					"id": 4,
+					"link": "http://smiletec.weebly.com/uploads/2/4/9/4/24945404/4905376_orig.jpg",
+					"type": "image"
+				},
+				{
+					"id": 5,
 					"link": "https://upload.wikimedia.org/wikipedia/commons/9/91/P_Vega_de_Calardos_%28640x480%29.jpg",
 					"type": "image"
 				}
 			],
-			"tags": ["html", "css", "js"],
+			"tags": ["html", "js", "vue", "scss", "i18n"],
 			"route": "snake"
 		}
 	],

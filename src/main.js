@@ -15,7 +15,6 @@ import {} from '@fortawesome/free-regular-svg-icons'
 
 import { YoutubeVue3 } from 'youtube-vue3'
 
-
 library.add(faTwitter, faLinkedin, faGithub, faChevronLeft, faChevronRight)
 
 createApp(App)

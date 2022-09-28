@@ -122,60 +122,75 @@
 	"card": {
 		"likes": "Nobody ❤️ this yet 😕 | {n} person ❤️ this | {n} people ❤️ this"
 	},
-    "projects":{
-        "portfolio": {
-            "id": 0,
-            "name": "portfolio eng",
-            "title": "portfolio of Parisi Fabio eng",
-            "description": "this project is made by fabio Parisi eng",
-            "technicaldescription": "lorem ipsum eng",
-            "githublink": "https://github.com/fabio98p/portfolio_project",
-            "deploylink": "",
-            "idvideo": "qGk4E9ss95s",
-            "images": [
-                {
-                    "link": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fit.linkedin.com%2Fcompany%2Fimg%3Ftrk%3Dppro_cprof&psig=AOvVaw3uUZUWwTlyfIPBFIu7EoXd&ust=1664019154791000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCIjvy8foqvoCFQAAAAAdAAAAABAD"
-                },
-                {
-                    "link": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fit.linkedin.com%2Fcompany%2Fimg%3Ftrk%3Dppro_cprof&psig=AOvVaw3uUZUWwTlyfIPBFIu7EoXd&ust=1664019154791000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCIjvy8foqvoCFQAAAAAdAAAAABAD"
-                },
-                {
-                    "link": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fit.linkedin.com%2Fcompany%2Fimg%3Ftrk%3Dppro_cprof&psig=AOvVaw3uUZUWwTlyfIPBFIu7EoXd&ust=1664019154791000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCIjvy8foqvoCFQAAAAAdAAAAABAD"
-                }
-            ],
-            "tags": [
-                "vue",
-                "scss",
-                "i18n"
-            ]
-        },
-        "snake": {
-            "id": 0,
-            "name": "snake eng",
-            "title": "snake of Parisi Fabio eng",
-            "description": "this project is made by fabio Parisi eng",
-            "technicaldescription": "lorem ipsum eng",
-            "githublink": "https://github.com/fabio98p/snake",
-            "deploylink": "",
-            "idvideo": "G1IbRujko-A",
-            "images": [
-                {
-                    "link": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fit.linkedin.com%2Fcompany%2Fimg%3Ftrk%3Dppro_cprof&psig=AOvVaw3uUZUWwTlyfIPBFIu7EoXd&ust=1664019154791000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCIjvy8foqvoCFQAAAAAdAAAAABAD"
-                },
-                {
-                    "link": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fit.linkedin.com%2Fcompany%2Fimg%3Ftrk%3Dppro_cprof&psig=AOvVaw3uUZUWwTlyfIPBFIu7EoXd&ust=1664019154791000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCIjvy8foqvoCFQAAAAAdAAAAABAD"
-                },
-                {
-                    "link": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fit.linkedin.com%2Fcompany%2Fimg%3Ftrk%3Dppro_cprof&psig=AOvVaw3uUZUWwTlyfIPBFIu7EoXd&ust=1664019154791000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCIjvy8foqvoCFQAAAAAdAAAAABAD"
-                }
-            ],
-            "tags": [
-                "vue",
-                "scss",
-                "i18n"
-            ]
-        }
-    },
+    "projects": [
+		{
+			"id": "portfolio",
+			"name": "portfolio eng",
+			"title": "Portfolio Project eng",
+			"subtitle": "portfolio creato da parisi fabio eng",
+			"description": "Questo projecto e' stato creato interamente da ma dalla a alla z grazie all'utilizzo di un potente framework ovvero Vue3, questo portfolio è stato fatto per racchiudere tutti i miei progetti e poterli mostrare in modo semplice e veloce",
+			"shortdescription": "Questo e' il progetto del mio portfolio, per maggiori informazioni premi qua eng",
+			"technicaldescription": "Questo eng progetto racchiude tutti i miei progetti. Per creare questo progetto ho usato come base vue3 e vue router, per quanto riguarda lo stile ho deciso di utilizzare il preprocessore scss per maggiore facilita nello scrivere lo stile rispetto al classico css invece per quando riguarda la programmazione ho preferito optare per javascript invece di typescript perche ho pensato che per un progetto cosi piccolo non sarebbe stato necessario utilizzarlo, in seguito ho studiato come implementare i18next che mi permette di poter far comprendere a chiunque quello che voglio comunicare",
+			"githublink": "https://github.com/fabio98p/portfolio_project",
+			"deploylink": "",
+			"idvideo": "qGk4E9ss95s",
+			"images": [
+				{
+					"id": 1,
+					"link": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/640px-Image_created_with_a_mobile_phone.png",
+					"type": "image"
+				},
+				{
+					"id": 2,
+					"link": "https://upload.wikimedia.org/wikipedia/commons/5/5c/640x480-afframont_ujamondrone_leitosa.JPG",
+					"type": "image"
+				},
+				{
+					"id": 3,
+					"link": "https://img.favcars.com/dodge/mixed/dodge_mixed__pictures_1_640x480.jpg",
+					"type": "image"
+				},
+				{
+					"id": 4,
+					"link": "http://smiletec.weebly.com/uploads/2/4/9/4/24945404/4905376_orig.jpg",
+					"type": "image"
+				},
+				{
+					"id": 5,
+					"link": "https://upload.wikimedia.org/wikipedia/commons/9/91/P_Vega_de_Calardos_%28640x480%29.jpg",
+					"type": "image"
+				}
+			],
+			"tags": ["html", "js", "vue", "scss", "i18n"],
+			"route": "portfolio"
+		},
+		{
+			"id": "snake",
+			"name": "snake ita",
+			"title": "snake of Parisi Fabio ita",
+			"subtitle": "sottotitolo",
+			"description": "this project is made by fabio Parisi ita",
+			"shortdescription": "In questo progetto ho voluto ricreare snake da 0",
+			"technicaldescription": "lorem ipsum ita",
+			"githublink": "https://github.com/fabio98p/snake",
+			"deploylink": "",
+			"idvideo": "G1IbRujko-A",
+			"images": [
+				{
+					"id": 1,
+					"link": "../assets/test.png",
+					"type": "image"
+				},
+				{
+					"id": 2,
+					"link": "https://upload.wikimedia.org/wikipedia/commons/9/91/P_Vega_de_Calardos_%28640x480%29.jpg",
+					"type": "image"
+				}
+			],
+			"tags": ["html", "css", "js"],
+			"route": "snake"
+		}
+	],
     "tags": [
         "html",
         "css",

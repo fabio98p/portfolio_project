@@ -5,23 +5,25 @@
 				<h1>{{ project.title.source }}</h1>
 				<div class="tags">
 					<div class="tag" :class="tag.source" v-for="tag in project.tags">
-                        <router-link :to="{name: 'tag', params: {id: `${tag.source}`}}" class="link">{{ tag.source }}</router-link>
+						<router-link :to="{ name: 'tag', params: { id: `${tag.source}` } }" class="link">{{ tag.source }}</router-link>
 					</div>
 				</div>
 			</header>
 			<main>
 				<div class="subtitle">
-					<h2>{{project.subtitle.source }}</h2>
+					<h2>{{ project.subtitle.source }}</h2>
 					<div class="border"></div>
-					<button @click="ChangeDescription">{{(description == "description")?"Mostra descrizione tecnica": "Mostra descrizione"}}</button>
+					<button @click="ChangeDescription">
+						{{ description == 'description' ? 'Mostra descrizione tecnica' : 'Mostra descrizione' }}
+					</button>
 				</div>
 				<div class="content">
-                    <Carousel :datas="project.images" class="carousel" />
+					<ImageCarousel :datas="project.images" class="carousel" />
 					<p v-if="description == 'description'">{{ project.description.source }}</p>
 					<p v-else>{{ project.technicaldescription.source }}</p>
 				</div>
-                
-                <YoutubePlayer class="player" />
+
+				<YoutubePlayer class="player" :idVideo="project.idvideo.source" />
 				<a :href="project.githublink.source">
 					<font-awesome-icon icon="fa-brands fa-github" />
 				</a>
@@ -31,15 +33,20 @@
 </template>
 <script>
 import YoutubePlayer from '../components/YoutubePlayer.vue'
-import Carousel from '@/components/Carousel.vue'
+import ImageCarousel from '@/components/Carousel/ImageCarousel.vue'
 export default {
 	name: 'project',
-	components: { YoutubePlayer, Carousel },
+	components: { YoutubePlayer, ImageCarousel },
 	data() {
 		return {
 			project: this.$tm('projects').filter(project => project.id.source == this.$route.params.id)[0],
 			imagesaaaa: this.$tm(`projects.${this.$route.params.id}.tags`),
 			description: 'description'
+		}
+	},
+	watch: {
+		$route(to, from) {
+			this.project = this.$tm('projects').filter(project => project.id.source == this.$route.params.id)[0]
 		}
 	},
 	methods: {
@@ -96,23 +103,23 @@ export default {
 			justify-content: space-between;
 			align-items: center;
 			width: 60%;
-			.border{
+			.border {
 				background-color: $black;
 				height: 2px;
 				flex-grow: 2;
 				margin: 0 20px;
 			}
-            button{
-                border-radius: 10px;
-                border: 2px solid grey;
-                background-color: bisque;
-                padding: 3px 10px;
-            }
+			button {
+				border-radius: 10px;
+				border: 2px solid grey;
+				background-color: bisque;
+				padding: 3px 10px;
+			}
 		}
-		.content{
+		.content {
 			display: flex;
 			align-items: top;
-			.player{
+			.player {
 				min-width: 60%;
 			}
 			p {
@@ -121,9 +128,9 @@ export default {
 				margin-top: 0;
 			}
 		}
-        .carousel{
-            width: 60%;
-        }
+		.carousel {
+			width: 60%;
+		}
 	}
 }
 </style>
