@@ -9,7 +9,9 @@
 					</div>
 				</div>
 			</header>
-			<main>
+			<SteamCarousel :medias="project.main.images" class="carousel" />
+
+			<!-- <main>
 				<div class="subtitle">
 					<h2>{{ project.main.subtitle.source }}</h2>
 					<div class="border"></div>
@@ -18,7 +20,7 @@
 					</button>
 				</div>
 				<div class="content">
-					<ImageCarousel :datas="project.main.images" class="carousel" />
+					<SteamCarousel :datas="project.main.images" class="carousel" />
 					<p v-if="description == 'description'">{{ project.main.description.source }}</p>
 					<p v-else>{{ project.main.technicaldescription.source }}</p>
 				</div>
@@ -27,16 +29,16 @@
 				<a :href="project.main.githublink.source">
 					<font-awesome-icon icon="fa-brands fa-github" />
 				</a>
-			</main>
+			</main> -->
 		</div>
 	</section>
 </template>
 <script>
 import YoutubePlayer from '../components/YoutubePlayer.vue'
-import ImageCarousel from '@/components/Carousel/ImageCarousel.vue'
+import SteamCarousel from '@/components/Carousel/SteamCarousel.vue'
 export default {
 	name: 'project',
-	components: { YoutubePlayer, ImageCarousel },
+	components: { YoutubePlayer, SteamCarousel },
 	data() {
 		return {
 			project: this.$tm('projects').filter(project => project.id.source == this.$route.params.id)[0],
@@ -73,10 +75,16 @@ export default {
 #project {
 	background-color: lightblue;
 
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	// display: flex;
+	// align-items: center;
+	// justify-content: center;
+    padding-bottom: 100px;
+	.carousel {
+        width: 90%;
+        margin: 0 auto;
+	}
 	header {
+        margin-bottom: 50px;
 		h1 {
 			font-size: 60px;
 			margin-bottom: 10px;

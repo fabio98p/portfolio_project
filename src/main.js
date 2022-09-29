@@ -10,12 +10,12 @@ import ClickOutside from './util/js/click-outside'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faTwitter, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { faChevronLeft, faChevronRight, faPlay } from '@fortawesome/free-solid-svg-icons'
 import {} from '@fortawesome/free-regular-svg-icons'
 
 import { YoutubeVue3 } from 'youtube-vue3'
 
-library.add(faTwitter, faLinkedin, faGithub, faChevronLeft, faChevronRight)
+library.add(faTwitter, faLinkedin, faGithub, faChevronLeft, faChevronRight, faPlay)
 
 createApp(App)
 	.directive('click-outside', ClickOutside)
