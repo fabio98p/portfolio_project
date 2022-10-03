@@ -1,10 +1,3 @@
-dividere il progetto in diverse rotte
-quelle piu inestate saranno i singoli progetti e le loro descrizioni complete
-in seguito ci saranno delle card con delle descrizioni dei progetti.
-queste card saranno da inserire in delle pagine apposite che descrivono delle cose particolati
-ex. pagina cronologica stile linkedin dove mostro tutto quello che ho fatto in ordine cronologico
-ex2. pagina dove espongo i vari progetti per una specifica tecnologia es. vue react angular blaxor ecc.
-
 creare slider per ciclare i progetti invece di inserirli uno sotto l'altro
 
 inserire nel componente progetti i link per collaborazioni/siti/social/altro
@@ -16,3 +9,14 @@ sistemare carosello invece di prendere l'id come riferimento per l'immagine base
 link per il projetto/deploy/github/collaboratorivari sotto il progetto
 
 mettere un bottone sotto la card progetto che rimandi al progetto e non che tutta la card rimandi al progetto anche nel projectcardforcarousel, vedi projectcard
+
+implementare i18n locale per il componente
+
+eliminare i vecchi file non utilizzati
+
+rinominare tutte le vue con in fondo la parola "view"
+
+creare dropdown per tipo di linguaggio es html css js
+in alternativa creare una searchbar per ricercare per tag
+
+completare il steamcarousel con la scrolbar custom
