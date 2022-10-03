@@ -128,120 +128,106 @@
 	"projects": [
 		{
 			"id": "portfolio",
-            "main":{
-                "name": "portfolio ita",
-                "title": "Portfolio Project",
-                "subtitle": "portfolio creato da parisi fabio",
-                "description": "Questo projecto e' stato creato interamente da ma dalla a alla z grazie all'utilizzo di un potente framework ovvero Vue3, questo portfolio è stato fatto per racchiudere tutti i miei progetti e poterli mostrare in modo semplice e veloce",
-                "technicaldescription": "Questo progetto racchiude tutti i miei progetti. Per creare questo progetto ho usato come base vue3 e vue router, per quanto riguarda lo stile ho deciso di utilizzare il preprocessore scss per maggiore facilita nello scrivere lo stile rispetto al classico css invece per quando riguarda la programmazione ho preferito optare per javascript invece di typescript perche ho pensato che per un progetto cosi piccolo non sarebbe stato necessario utilizzarlo, in seguito ho studiato come implementare i18next che mi permette di poter far comprendere a chiunque quello che voglio comunicare",
-                "githublink": "https://github.com/fabio98p/portfolio_project",
-                "deploylink": "",
-                "idvideo": "qGk4E9ss95s",
-                "images": [
-                    {
-                        "id": 1,
-                        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/16x9_by_Pengo.svg/1200px-16x9_by_Pengo.svg.png",
-                        "type": "player"
-                    },
-                    {
-                        "id": 2,
-                        "link": "https://images.unsplash.com/photo-1549213821-4708d624e1d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8MTYlM0E5fGVufDB8fDB8fA%3D%3D&w=1000&q=80",
-                        "type": "player"
-                    },
-                    {
-                        "id": 3,
-                        "link": "https://thumbs.dreamstime.com/b/sunset-tropical-beach-picture-aspect-ratio-face-figure-girl-changed-93174726.jpg",
-                        "type": "player"
-                    },
-                    {
-                        "id": 4,
-                        "link": "https://www.online-tech-tips.com/wp-content/uploads/2016/03/widescreen-iphone-photo.jpg",
-                        "type": "player"
-                    },
-                    {
-                        "id": 5,
-                        "link": "https://previews.123rf.com/images/patterndesign/patterndesign1706/patterndesign170600902/80149005-abstract-image-background-16-9-aspect-ratio-in-digital-art-style-horizontal-blue-waves-.jpg",
-                        "type": "player"
-                    },
-                    {
-                        "id": 6,
-                        "link": "https://wallpaperaccess.com/full/1406840.jpg",
-                        "type": "image"
-                    },
-                    {
-                        "id": 7,
-                        "link": "https://t3.ftcdn.net/jpg/01/38/70/10/360_F_138701030_tptAsaJt6C9BwBQXFcDX6ORVuGMi9vPt.jpg",
-                        "type": "image"
-                    },
-                    {
-                        "id": 8,
-                        "link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTxbqJCD7h8PcHfMneL-2ZQKLL50bQF9i-1A&usqp=CAU",
-                        "type": "image"
-                    },
-                    {
-                        "id": 9,
-                        "link": "https://i0.wp.com/digital-photography-school.com/wp-content/uploads/2013/07/ar-12.jpg?ssl=1",
-                        "type": "image"
-                    },
-                    {
-                        "id": 10,
-                        "link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-qN0JOzsVJpXHl7dcFRDnijRR2TDy25Bokg&usqp=CAU",
-                        "type": "image"
-                    }
-                ]
-            },
-            "card": {
-                "title": "Portfolio Project",
-                "shortdescription": "Questo e' il progetto del mio portfolio, per maggiori informazioni premi qua",
-                "route": "portfolio"
-            },
-            "tags": ["html", "js", "vue", "scss", "i18n"]
+			"main": {
+				"name": "portfolio ita",
+				"title": "Portfolio Project",
+				"subtitle": "portfolio creato da parisi fabio",
+				"description": "Questo projecto e' stato creato interamente da ma dalla a alla z grazie all'utilizzo di un potente framework ovvero Vue3, questo portfolio è stato fatto per racchiudere tutti i miei progetti e poterli mostrare in modo semplice e veloce",
+				"technicaldescription": "Questo progetto racchiude tutti i miei progetti. Per creare questo progetto ho usato come base vue3 e vue router, per quanto riguarda lo stile ho deciso di utilizzare il preprocessore scss per maggiore facilita nello scrivere lo stile rispetto al classico css invece per quando riguarda la programmazione ho preferito optare per javascript invece di typescript perche ho pensato che per un progetto cosi piccolo non sarebbe stato necessario utilizzarlo, in seguito ho studiato come implementare i18next che mi permette di poter far comprendere a chiunque quello che voglio comunicare",
+				"githublink": "https://github.com/fabio98p/portfolio_project",
+				"deploylink": "",
+				"idvideo": "qGk4E9ss95s",
+				"images": [
+					{
+						"id": 1,
+						"thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/16x9_by_Pengo.svg/1200px-16x9_by_Pengo.svg.png",
+						"link": "PGKdhZe_n14",
+						"type": "player"
+					},
+					{
+						"id": 2,
+						"thumbnail": "https://images.unsplash.com/photo-1549213821-4708d624e1d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8MTYlM0E5fGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+						"link": "https://images.unsplash.com/photo-1549213821-4708d624e1d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8MTYlM0E5fGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+						"type": "image"
+					},
+					{
+						"id": 3,
+						"thumbnail": "https://thumbs.dreamstime.com/b/sunset-tropical-beach-picture-aspect-ratio-face-figure-girl-changed-93174726.jpg",
+						"link": "https://thumbs.dreamstime.com/b/sunset-tropical-beach-picture-aspect-ratio-face-figure-girl-changed-93174726.jpg",
+						"type": "image"
+					},
+					{
+						"id": 4,
+						"thumbnail": "https://www.online-tech-tips.com/wp-content/uploads/2016/03/widescreen-iphone-photo.jpg",
+						"link": "https://www.online-tech-tips.com/wp-content/uploads/2016/03/widescreen-iphone-photo.jpg",
+						"type": "image"
+					},
+					{
+						"id": 5,
+						"thumbnail": "https://previews.123rf.com/images/patterndesign/patterndesign1706/patterndesign170600902/80149005-abstract-image-background-16-9-aspect-ratio-in-digital-art-style-horizontal-blue-waves-.jpg",
+						"link": "https://previews.123rf.com/images/patterndesign/patterndesign1706/patterndesign170600902/80149005-abstract-image-background-16-9-aspect-ratio-in-digital-art-style-horizontal-blue-waves-.jpg",
+						"type": "image"
+					},
+					{
+						"id": 6,
+						"thumbnail": "https://wallpaperaccess.com/full/1406840.jpg",
+						"link": "https://wallpaperaccess.com/full/1406840.jpg",
+						"type": "image"
+					}
+				]
+			},
+			"card": {
+				"title": "Portfolio Project",
+				"shortdescription": "Questo e' il progetto del mio portfolio, per maggiori informazioni premi qua",
+				"route": "portfolio"
+			},
+			"tags": ["html", "js", "vue", "scss", "i18n"]
 		},
-        {
+		{
 			"id": "snake",
-            "main":{
-                "name": "snake ita",
-                "title": "snake Project",
-                "description": "Questo projecto e' stato creato interamente da ma dalla a alla z grazie all'utilizzo di un potente framework ovvero Vue3, questo snake è stato fatto per racchiudere tutti i miei progetti e poterli mostrare in modo semplice e veloce",
-                "subtitle": "snake creato da parisi fabio",
-                "technicaldescription": "Questo progetto racchiude tutti i miei progetti. Per creare questo progetto ho usato come base vue3 e vue router, per quanto riguarda lo stile ho deciso di utilizzare il preprocessore scss per maggiore facilita nello scrivere lo stile rispetto al classico css invece per quando riguarda la programmazione ho preferito optare per javascript invece di typescript perche ho pensato che per un progetto cosi piccolo non sarebbe stato necessario utilizzarlo, in seguito ho studiato come implementare i18next che mi permette di poter far comprendere a chiunque quello che voglio comunicare",
-                "githublink": "https://github.com/fabio98p/snake",
-                "deploylink": "",
-                "idvideo": "1nIcorC1tj8",
-                "images": [
-                    {
-                        "id": 1,
-                        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/640px-Image_created_with_a_mobile_phone.png",
-                        "type": "image"
-                    },
-                    {
-                        "id": 2,
-                        "link": "https://upload.wikimedia.org/wikipedia/commons/5/5c/640x480-afframont_ujamondrone_leitosa.JPG",
-                        "type": "image"
-                    },
-                    {
-                        "id": 3,
-                        "link": "https://img.favcars.com/dodge/mixed/dodge_mixed__pictures_1_640x480.jpg",
-                        "type": "image"
-                    },
-                    {
-                        "id": 4,
-                        "link": "http://smiletec.weebly.com/uploads/2/4/9/4/24945404/4905376_orig.jpg",
-                        "type": "image"
-                    },
-                    {
-                        "id": 5,
-                        "link": "https://upload.wikimedia.org/wikipedia/commons/9/91/P_Vega_de_Calardos_%28640x480%29.jpg",
-                        "type": "image"
-                    }
-                ]
-            },
-            "card":{
-                "title": "snake Project",
-                "shortdescription": "Questo e' il progetto del mio snake, per maggiori informazioni premi qua",
-                "route": "snake"
-            },
-            "tags": ["html", "css", "js"]
+			"main": {
+				"name": "snake ita",
+				"title": "snake Project",
+				"description": "Questo projecto e' stato creato interamente da ma dalla a alla z grazie all'utilizzo di un potente framework ovvero Vue3, questo snake è stato fatto per racchiudere tutti i miei progetti e poterli mostrare in modo semplice e veloce",
+				"subtitle": "snake creato da parisi fabio",
+				"technicaldescription": "Questo progetto racchiude tutti i miei progetti. Per creare questo progetto ho usato come base vue3 e vue router, per quanto riguarda lo stile ho deciso di utilizzare il preprocessore scss per maggiore facilita nello scrivere lo stile rispetto al classico css invece per quando riguarda la programmazione ho preferito optare per javascript invece di typescript perche ho pensato che per un progetto cosi piccolo non sarebbe stato necessario utilizzarlo, in seguito ho studiato come implementare i18next che mi permette di poter far comprendere a chiunque quello che voglio comunicare",
+				"githublink": "https://github.com/fabio98p/snake",
+				"deploylink": "",
+				"idvideo": "1nIcorC1tj8",
+				"images": [
+					{
+						"id": 1,
+						"link": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/640px-Image_created_with_a_mobile_phone.png",
+						"type": "image"
+					},
+					{
+						"id": 2,
+						"link": "https://upload.wikimedia.org/wikipedia/commons/5/5c/640x480-afframont_ujamondrone_leitosa.JPG",
+						"type": "image"
+					},
+					{
+						"id": 3,
+						"link": "https://img.favcars.com/dodge/mixed/dodge_mixed__pictures_1_640x480.jpg",
+						"type": "image"
+					},
+					{
+						"id": 4,
+						"link": "http://smiletec.weebly.com/uploads/2/4/9/4/24945404/4905376_orig.jpg",
+						"type": "image"
+					},
+					{
+						"id": 5,
+						"link": "https://upload.wikimedia.org/wikipedia/commons/9/91/P_Vega_de_Calardos_%28640x480%29.jpg",
+						"type": "image"
+					}
+				]
+			},
+			"card": {
+				"title": "snake Project",
+				"shortdescription": "Questo e' il progetto del mio snake, per maggiori informazioni premi qua",
+				"route": "snake"
+			},
+			"tags": ["html", "css", "js"]
 		}
 	],
 	"tags": ["html", "css", "scss", "js", "ts", "jquery", "react", "vue", "angular", "i18n"]

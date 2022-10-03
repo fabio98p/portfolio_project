@@ -9,9 +9,9 @@
 					</div>
 				</div>
 			</header>
-			<SteamCarousel :medias="project.main.images" class="carousel" />
+			
 
-			<!-- <main>
+			<main>
 				<div class="subtitle">
 					<h2>{{ project.main.subtitle.source }}</h2>
 					<div class="border"></div>
@@ -20,16 +20,15 @@
 					</button>
 				</div>
 				<div class="content">
-					<SteamCarousel :datas="project.main.images" class="carousel" />
+					<SteamCarousel :medias="project.main.images" class="carousel" />
 					<p v-if="description == 'description'">{{ project.main.description.source }}</p>
 					<p v-else>{{ project.main.technicaldescription.source }}</p>
 				</div>
 
-				<YoutubePlayer class="player" :idVideo="project.main.idvideo.source" />
 				<a :href="project.main.githublink.source">
 					<font-awesome-icon icon="fa-brands fa-github" />
 				</a>
-			</main> -->
+			</main>
 		</div>
 	</section>
 </template>
@@ -74,20 +73,16 @@ export default {
 @import '../master.scss';
 #project {
 	background-color: lightblue;
-
+    padding-top: 40px;
 	// display: flex;
 	// align-items: center;
 	// justify-content: center;
     padding-bottom: 100px;
-	.carousel {
-        width: 90%;
-        margin: 0 auto;
-	}
 	header {
         margin-bottom: 50px;
 		h1 {
 			font-size: 60px;
-			margin-bottom: 10px;
+			margin: 0 0 10px 0;
 			color: $black;
 		}
 		.tags {
@@ -107,10 +102,10 @@ export default {
 	}
 	main {
 		.subtitle {
+            font-size: 28px;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-			width: 60%;
 			.border {
 				background-color: $black;
 				height: 2px;
@@ -126,18 +121,17 @@ export default {
 		}
 		.content {
 			display: flex;
+            justify-content: space-between;
 			align-items: top;
-			.player {
-				min-width: 60%;
+			.carousel {
+				width: 60%;
 			}
 			p {
-				font-size: 19px;
-				width: 40%;
+				font-size: 20px;
+				width: 35%;
 				margin-top: 0;
+                line-height: 30px;
 			}
-		}
-		.carousel {
-			width: 60%;
 		}
 	}
 }
