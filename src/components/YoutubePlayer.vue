@@ -17,7 +17,7 @@ export default {
 	data() {
 		return {
 			width: 856,
-			height: 481.5,
+			height: 200,
 		}
 	},
 	mounted() {
