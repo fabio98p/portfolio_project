@@ -3,11 +3,79 @@
         "seemore": "Per saperne di piu"
     },
 	"nav": {
-		"home": "Casa",
-		"about": "Riguardo a",
-		"project": "Progetto",
-		"portfolio": "portfolio",
-		"snake": "snake"
+		"home": {
+            "title": "Casa",
+            "link": "/"
+        },
+		"about": {
+            "title": "Riguardo a",
+            "link": "/about"
+        },
+        "boolean": {
+            "title": "boolean",
+            "link": "/boolean"
+        },
+		"snake": "snake",
+        "projects": {
+            "titledropdown": "progetti",
+            "mainlink": "project",
+            "bodydropdown": [
+                {
+                    "text": "portfolio",
+                    "link": "portfolio"
+                },
+                {
+                    "text": "snake",
+                    "link": "snake"
+                }
+            ]
+        },
+        "languages": {
+            "titledropdown": "Linguaggi",
+            "mainlink": "tag",
+            "bodydropdown": [
+                {
+                    "text": "html",
+                    "link": "html"
+                },
+                {
+                    "text": "css",
+                    "link": "css"
+                },
+                {
+                    "text": "scss",
+                    "link": "scss"
+                },
+                {
+                    "text": "js",
+                    "link": "js"
+                },
+                {
+                    "text": "ts",
+                    "link": "ts"
+                },
+                {
+                    "text": "jquery",
+                    "link": "jquery"
+                },
+                {
+                    "text": "react",
+                    "link": "react"
+                },
+                {
+                    "text": "vue",
+                    "link": "vue"
+                },
+                {
+                    "text": "angular",
+                    "link": "angular"
+                },
+                {
+                    "text": "i18n",
+                    "link": "i18n"
+                }
+            ]
+        }
 	},
 	"home": {
 		"name": "Parisi Fabio",
@@ -113,19 +181,7 @@
 			]
 		}
 	},
-	"test": {
-		"titledropdown": "progetti",
-		"bodydropdown": [
-			{
-				"text": "portfolio",
-				"link": "portfolio"
-			},
-			{
-				"text": "snake",
-				"link": "snake"
-			}
-		]
-	},
+	
 	"user_greeting": "Ciao, {name}",
 	"footer": "costruito con vye e vuei18n<br/> supportato da un eccessiva dose di caffe",
 	"projects": [

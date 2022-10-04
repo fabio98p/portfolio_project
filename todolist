@@ -1,8 +1,4 @@
-creare slider per ciclare i progetti invece di inserirli uno sotto l'altro
-
 inserire nel componente progetti i link per collaborazioni/siti/social/altro
-
-rimuovere robe dalla navbar
 
 sistemare carosello invece di prendere l'id come riferimento per l'immagine base usare la length dell'array in arrivo
 
@@ -16,7 +12,6 @@ eliminare i vecchi file non utilizzati
 
 rinominare tutte le vue con in fondo la parola "view"
 
-creare dropdown per tipo di linguaggio es html css js
-in alternativa creare una searchbar per ricercare per tag
-
 completare il steamcarousel con la scrolbar custom
+
+sostituire al posto di tag language

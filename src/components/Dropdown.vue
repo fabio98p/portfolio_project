@@ -3,7 +3,7 @@
         <h1 @click="ToggleDropdown" >{{datas.titledropdown.source}}</h1>
         <ul v-if="DropdownOpen">
             <li v-for="e in datas.bodydropdown">
-                <router-link :to="{name: 'project', params: {id:e.link.source}}" class="link">{{e.text.source}}</router-link>
+                <router-link :to="{name: datas.mainlink.source, params: {id :e.link.source}}" class="link">{{e.text.source}}</router-link>
             </li>
         </ul>
     </section>
@@ -51,6 +51,7 @@ export default {
         border: 1px solid black;
         padding: 10px;
         border-radius: 20px;
+        z-index: 30;
         li{
             list-style: none;
             text-decoration:none;
