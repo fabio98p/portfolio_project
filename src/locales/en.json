@@ -6,11 +6,79 @@
 		"title": "International Gourmet Coffee"
 	},
 	"nav": {
-		"home": "Casa",
-		"about": "Riguardo a",
-        "project": "Progetto",
-        "portfolio": "portfolio",
-        "snake": "snake"
+		"home": {
+			"title": "home",
+			"link": "/"
+		},
+		"about": {
+			"title": "about me",
+			"link": "/about"
+		},
+		"boolean": {
+			"title": "boolean",
+			"link": "/boolean"
+		},
+		"snake": "snake",
+		"projects": {
+			"titledropdown": "project",
+			"mainlink": "project",
+			"bodydropdown": [
+				{
+					"text": "portfolio",
+					"link": "portfolio"
+				},
+				{
+					"text": "snake",
+					"link": "snake"
+				}
+			]
+		},
+		"languages": {
+			"titledropdown": "languages",
+			"mainlink": "language",
+			"bodydropdown": [
+				{
+					"text": "html",
+					"link": "html"
+				},
+				{
+					"text": "css",
+					"link": "css"
+				},
+				{
+					"text": "scss",
+					"link": "scss"
+				},
+				{
+					"text": "js",
+					"link": "js"
+				},
+				{
+					"text": "ts",
+					"link": "ts"
+				},
+				{
+					"text": "jquery",
+					"link": "jquery"
+				},
+				{
+					"text": "react",
+					"link": "react"
+				},
+				{
+					"text": "vue",
+					"link": "vue"
+				},
+				{
+					"text": "angular",
+					"link": "angular"
+				},
+				{
+					"text": "i18n",
+					"link": "i18n"
+				}
+			]
+		}
 	},
     "aboutme": {
         "title": "Sono Parisi Fabio",

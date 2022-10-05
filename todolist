@@ -8,10 +8,6 @@ ricontrollare lezioni sulle route
 mettere il tasto back
 fare componente modal per vedere l'immagine grande in carousel
 
-quando si faranno i projetti inserire un carousel con progietti in corso nella homepage
+quando si faranno i projetti inserire un carousel con "progietti in corso" nella homepage
 
 rimuovere errori, warning e console log dal codice
-
-
-
-implementare i18n locale per il componente

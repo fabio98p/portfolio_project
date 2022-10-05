@@ -1,5 +1,6 @@
 <template>
 	<div id="template">{{dataTest}}</div>
+	<p>{{ $t('utilities.seemore') }}</p>
 </template>
 <script>
 export default {
