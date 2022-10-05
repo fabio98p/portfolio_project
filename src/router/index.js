@@ -21,7 +21,14 @@ const routes = [
 		// path: '/project/:slag',
 		path: '/project/:id',
 		name: 'project',
-		component: () => import(/* webpackChunkName: "project" */ '@/views/Project.vue')
+		component: () => import(/* webpackChunkName: "project" */ '@/views/Project.vue'),
+		children: [
+			{
+				path: '/img/:imgId',
+				name: 'image',
+				component: () => import(/* webpackChunkName: "project" */ '@/components/ImageModal.vue'),
+			}
+		]
 	},
     {
 		// path: '/project/:slag',
