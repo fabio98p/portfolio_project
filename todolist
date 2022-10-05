@@ -1,28 +1,17 @@
-inserire nel componente progetti i link per collaborazioni/siti/social/altro
-
-sistemare carosello invece di prendere l'id come riferimento per l'immagine base usare la length dell'array in arrivo
-
-link per il projetto/deploy/github/collaboratorivari sotto il progetto
-
-mettere un bottone sotto la card progetto che rimandi al progetto e non che tutta la card rimandi al progetto anche nel projectcardforcarousel, vedi projectcard
-
-implementare i18n locale per il componente
-
-eliminare i vecchi file non utilizzati
-
-rinominare tutte le vue con in fondo la parola "view"
-
 completare il steamcarousel con la scrolbar custom
 
-sostituire al posto di tag language
-
-inserire per la pagina tag/linguaggi il fatto che se non ci sono progetti relazionati a quel tag scriva non ci sono progetti relazionati
-
 mettere immagini da locale nei carosello
-
 
 fare refactoring di tutto il codice
 
 ricontrollare lezioni sulle route
 mettere il tasto back
 fare componente modal per vedere l'immagine grande in carousel
+
+quando si faranno i projetti inserire un carousel con progietti in corso nella homepage
+
+rimuovere errori, warning e console log dal codice
+
+
+
+implementare i18n locale per il componente

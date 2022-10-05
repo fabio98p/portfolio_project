@@ -28,7 +28,6 @@ export default {
     },
 	methods: {
         ToggleDropdown(){
-            console.log(this.DropdownOpen);
             if(this.DropdownOpen == false) this.DropdownOpen = true
             else this.DropdownOpen = false
         },

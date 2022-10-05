@@ -1,14 +1,14 @@
 <template>
 	<div id="imageCarousel">
 		<div v-for="media in medias" class="image">
-            <div class="media_container" v-if="media.id == this.actualImg">
+            <div class="media_container" v-if="GetCardIdByElement(media) == this.actualMedia">
                 <img :src="media.link.source" v-if="media.type.source == 'image'"  @click="GetImageById(media)" />
                 <YoutubePlayer :idVideo="media.link.source" v-if="media.type.source == 'player'" />
             </div>
 		</div>
 		<div class="medias_selector">
 			<div class="media" v-for="media in medias" :class="AddMediaClass(media)">
-				<img :src="media.thumbnail.source" @click="SetActualImgById(media.id)" />
+				<img :src="media.thumbnail.source" @click="SetactualMediaById(GetCardIdByElement(media))" />
 				<div class="player_icon">
 					<font-awesome-icon icon="fa-solid fa-play" class="play" />
 				</div>
@@ -34,7 +34,7 @@ export default {
 	name: 'imageCarousel',
 	data() {
 		return {
-			actualImg: 1
+			actualMedia: 0
 		}
 	},
 	props: {
@@ -43,27 +43,27 @@ export default {
 	components: { YoutubePlayer },
 	methods: {
 		Back() {
-			if (this.actualImg != 1) {
-				this.actualImg--
+            if (this.actualMedia != 0) {
+                this.actualMedia--
 			} else {
-				this.actualImg = this.medias.length
+                this.actualMedia = this.medias.length -1
 			}
 		},
 		Front() {
-			if (this.actualImg != this.medias.length) {
-				this.actualImg++
+            if (this.actualMedia != this.medias.length -1) {
+                this.actualMedia++
 			} else {
-				this.actualImg = 1
+                this.actualMedia = 0
 			}
 		},
-		GetImageById(data) {
-			console.log(data)
+		GetCardIdByElement(e) {
+			return this.medias.indexOf(e)
 		},
-		SetActualImgById(id) {
-			this.actualImg = id
+		SetactualMediaById(id) {
+			this.actualMedia = id
 		},
 		AddMediaClass(media) {
-			return `${media.id == this.actualImg ? 'active' : ''} ${media.type.source == 'player' ? 'player' : 'image'}`
+			return `${this.GetCardIdByElement(media) == this.actualMedia ? 'active' : ''} ${media.type.source == 'player' ? 'player' : 'image'}`
 		}
 	}
 }

@@ -78,3 +78,14 @@ a{
 	--bg-navbar: rgb(0, 64, 59);
 }
 </style>
+
+<!-- <i18n>
+{
+  "en": {
+    "hello": "Hello world"
+  },
+  "it": {
+    "hello": "ciao mondo"
+  }
+}
+</i18n> -->

@@ -48,10 +48,6 @@ export default {
 	.workinfo {
 		display: flex;
         font-size: 17px;
-		.company {
-		}
-		.typeofcontract {
-		}
 	}
     .time{
         display: flex;

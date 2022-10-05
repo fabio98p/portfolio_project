@@ -1,11 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue'
 
 const routes = [
 	{
 		path: '/',
 		name: 'home',
-		component: Home
+        component: function () {
+			return import(/* webpackChunkName: "home" */ '../views/HomeView.vue')
+		}
 	},
 	{
 		path: '/about',
@@ -21,7 +22,7 @@ const routes = [
 		// path: '/project/:slag',
 		path: '/project/:id',
 		name: 'project',
-		component: () => import(/* webpackChunkName: "project" */ '@/views/Project.vue'),
+		component: () => import(/* webpackChunkName: "project" */ '@/views/ProjectView.vue'),
 		children: [
 			{
 				path: '/img/:imgId',
@@ -32,9 +33,9 @@ const routes = [
 	},
     {
 		// path: '/project/:slag',
-		path: '/tag/:id',
-		name: 'tag',
-		component: () => import(/* webpackChunkName: "tag" */ '@/views/TagPageView.vue')
+		path: '/language/:id',
+		name: 'language',
+		component: () => import(/* webpackChunkName: "language" */ '@/views/LanguagePageView.vue')
 	}
 ]
 

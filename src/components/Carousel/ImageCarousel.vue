@@ -4,13 +4,13 @@
 			<font-awesome-icon icon="fa-solid fa-chevron-left" />
 		</div>
 		<div v-for="data in datas" class="image">
-			<img :src="data.link.source" v-if="data.id == this.actualImg" @click="GetImageById(data)" />
+			<img :src="data.link.source" v-if="GetCardIdByElement(data) == this.actualImg" @click="GetImageById(data)" />
 		</div>
 		<div class="front" @click="Front">
 			<font-awesome-icon icon="fa-solid fa-chevron-right" />
 		</div>
         <div class="dots">
-            <div class="dot" v-for="data in datas" :class="data.id == actualImg ? 'active': ''" @click="SetActualImgById(data.id)" ></div>
+            <div class="dot" v-for="data in datas" :class="GetCardIdByElement(data) == actualImg ? 'active': ''" @click="SetActualImgById(GetCardIdByElement(data))" ></div>
         </div>
 	</div>
 </template>
@@ -20,7 +20,7 @@ export default {
 	name: 'imageCarousel',
 	data() {
 		return {
-			actualImg: 1
+			actualImg: 0
 		}
 	},
 	props: {
@@ -28,22 +28,22 @@ export default {
 	},
 	components: {},
 	methods: {
-		Back() {
-			if (this.actualImg != 1) {
-				this.actualImg--
+        Back() {
+            if (this.actualImg != 0) {
+                this.actualImg--
 			} else {
-				this.actualImg = this.datas.length
+                this.actualImg = this.datas.length -1
 			}
 		},
 		Front() {
-			if (this.actualImg != this.datas.length) {
-				this.actualImg++
+            if (this.actualImg != this.datas.length -1) {
+                this.actualImg++
 			} else {
-				this.actualImg = 1
+                this.actualImg = 0
 			}
 		},
-		GetImageById(data) {
-			console.log(data)
+        GetCardIdByElement(e) {
+			return this.datas.indexOf(e)
 		},
         SetActualImgById(id){
             this.actualImg = id

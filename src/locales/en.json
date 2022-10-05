@@ -164,7 +164,7 @@
 					"type": "image"
 				}
 			],
-			"tags": ["html", "js", "vue", "scss", "i18n"],
+			"languages": ["html", "js", "vue", "scss", "i18n"],
 			"route": "portfolio"
 		},
 		{
@@ -190,11 +190,11 @@
 					"type": "image"
 				}
 			],
-			"tags": ["html", "css", "js"],
+			"languages": ["html", "css", "js"],
 			"route": "snake"
 		}
 	],
-    "tags": [
+    "languages": [
         "html",
         "css",
         "scss",

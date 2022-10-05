@@ -2,10 +2,10 @@
 	<section id="project">
 		<div>
 			<header>
-				<h1 @click="debugMethod">{{ project.main.title.source }}</h1>
-				<div class="tags">
-					<div class="tag" :class="tag.source" v-for="tag in project.tags">
-						<router-link :to="{ name: 'tag', params: { id: `${tag.source}` } }" class="link">{{ tag.source }}</router-link>
+				<h1>{{ $t('projectpage.title', {project: project.id.source}) }}</h1>
+				<div class="languages">
+					<div class="language" :class="language.source" v-for="language in project.languages">
+						<router-link :to="{ name: 'language', params: { id: `${language.source}` } }" class="link">{{ language.source }}</router-link>
 					</div>
 				</div>
 			</header>
@@ -57,7 +57,7 @@ export default {
 	data() {
 		return {
 			project: this.$tm('projects').filter(project => project.id.source == this.$route.params.id)[0],
-			imagesaaaa: this.$tm(`projects.${this.$route.params.id}.tags`),
+			imagesaaaa: this.$tm(`projects.${this.$route.params.id}.languages`),
 			description: 'description'
 		}
 	},
@@ -99,10 +99,10 @@ export default {
 			margin: 0 0 10px 0;
 			color: $black;
 		}
-		.tags {
+		.languages {
 			display: flex;
 			flex-wrap: wrap;
-			.tag {
+			.language {
 				width: 60px;
 				height: 30px;
 				border-radius: 15px;
