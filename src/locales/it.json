@@ -76,6 +76,7 @@
                 }
             ]
         }
+
 	},
 	"home": {
 		"name": "Parisi Fabio",
@@ -193,8 +194,6 @@
 				"subtitle": "portfolio creato da parisi fabio",
 				"description": "Questo projecto e' stato creato interamente da ma dalla a alla z grazie all'utilizzo di un potente framework ovvero Vue3, questo portfolio è stato fatto per racchiudere tutti i miei progetti e poterli mostrare in modo semplice e veloce",
 				"technicaldescription": "Questo progetto racchiude tutti i miei progetti. Per creare questo progetto ho usato come base vue3 e vue router, per quanto riguarda lo stile ho deciso di utilizzare il preprocessore scss per maggiore facilita nello scrivere lo stile rispetto al classico css invece per quando riguarda la programmazione ho preferito optare per javascript invece di typescript perche ho pensato che per un progetto cosi piccolo non sarebbe stato necessario utilizzarlo, in seguito ho studiato come implementare i18next che mi permette di poter far comprendere a chiunque quello che voglio comunicare",
-				"githublink": "https://github.com/fabio98p/portfolio_project",
-				"deploylink": "",
 				"idvideo": "qGk4E9ss95s",
 				"images": [
 					{
@@ -240,7 +239,34 @@
 				"shortdescription": "Questo e' il progetto del mio portfolio, per maggiori informazioni premi qua",
 				"route": "portfolio"
 			},
-			"tags": ["html", "js", "vue", "scss", "i18n"]
+			"tags": ["html", "js", "vue", "scss", "i18n"],
+            "contributors": {
+                "listintroduction": "collaboratori",
+                "list":[
+                    {
+                        "title": "gino pierino (desiner)",
+                        "link": "https://www.ita-airways.com/it_it/fly-ita/baggage/hand-baggage.html"
+                    },
+                    {
+                        "title": "marco canta (developer)",
+                        "link": "https://www.ita-airways.com/it_it/fly-ita/baggage/hand-baggage.html"
+                    }
+                ]
+            },
+            "links": {
+                "listintroduction": "links",
+                "list":[
+                    {
+                        "title": "deploy",
+                        "link": "https://www.ita-airways.com/it_it/fly-ita/baggage/hand-baggage.html"
+                    },
+                    {
+                        "title": "github",
+                        "link": "https://www.ita-airways.com/it_it/fly-ita/baggage/hand-baggage.html"
+                    }
+                ]
+            }
+
 		},
 		{
 			"id": "snake",

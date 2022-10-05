@@ -17,3 +17,7 @@ completare il steamcarousel con la scrolbar custom
 sostituire al posto di tag language
 
 inserire per la pagina tag/linguaggi il fatto che se non ci sono progetti relazionati a quel tag scriva non ci sono progetti relazionati
+
+mettere immagini da locale nei carosello
+
+fare componente modal per vedere l'immagine grande in carousel

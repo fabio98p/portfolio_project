@@ -2,14 +2,13 @@
 	<section id="project">
 		<div>
 			<header>
-				<h1>{{ project.main.title.source }}</h1>
+				<h1 @click="debugMethod">{{ project.main.title.source }}</h1>
 				<div class="tags">
 					<div class="tag" :class="tag.source" v-for="tag in project.tags">
 						<router-link :to="{ name: 'tag', params: { id: `${tag.source}` } }" class="link">{{ tag.source }}</router-link>
 					</div>
 				</div>
 			</header>
-			
 
 			<main>
 				<div class="subtitle">
@@ -24,10 +23,27 @@
 					<p v-if="description == 'description'">{{ project.main.description.source }}</p>
 					<p v-else>{{ project.main.technicaldescription.source }}</p>
 				</div>
-
-				<a :href="project.main.githublink.source">
-					<font-awesome-icon icon="fa-brands fa-github" />
-				</a>
+				<div class="contributors" v-if="project.contributors">
+					<h3>
+                        {{ project.contributors.listintroduction.source }}
+                    </h3>
+					<ul>
+                        <li v-for="e in project.contributors.list">
+                            <a :href="e.link.source">{{e.title.source}}</a>
+                        </li>
+                    </ul>
+				</div>
+                <div class="links" v-if="project.links">
+					<h3>
+                        {{ project.links.listintroduction.source }}
+                    </h3>
+					<ul>
+                        <li v-for="e in project.links.list">
+                            <a :href="e.link.source">{{e.title.source}}</a>
+                        </li>
+                    </ul>
+				</div>
+                <!-- <font-awesome-icon icon="fa-brands fa-github" /> -->
 			</main>
 		</div>
 	</section>
@@ -51,10 +67,8 @@ export default {
 		}
 	},
 	methods: {
-		forceRerender() {
-			stopVideo()
-			console.log(this.componentKey)
-			this.componentKey += 1
+		debugMethod() {
+            debugger
 		},
 		test() {
 			console.log(this.imagesaaaa)
@@ -73,13 +87,13 @@ export default {
 @import '../master.scss';
 #project {
 	background-color: lightblue;
-    padding-top: 40px;
+	padding-top: 40px;
 	// display: flex;
 	// align-items: center;
 	// justify-content: center;
-    padding-bottom: 100px;
+	padding-bottom: 100px;
 	header {
-        margin-bottom: 50px;
+		margin-bottom: 50px;
 		h1 {
 			font-size: 60px;
 			margin: 0 0 10px 0;
@@ -102,7 +116,7 @@ export default {
 	}
 	main {
 		.subtitle {
-            font-size: 28px;
+			font-size: 28px;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
@@ -121,7 +135,7 @@ export default {
 		}
 		.content {
 			display: flex;
-            justify-content: space-between;
+			justify-content: space-between;
 			align-items: top;
 			.carousel {
 				width: 60%;
@@ -130,9 +144,18 @@ export default {
 				font-size: 20px;
 				width: 35%;
 				margin-top: 0;
-                line-height: 30px;
+				line-height: 30px;
 			}
 		}
+        .contributors,
+        .links{
+            ul{
+                padding-left: 25px;
+                li{
+                    list-style-type: disc
+                }
+            }
+        }
 	}
 }
 </style>

@@ -119,6 +119,7 @@ export default {
 
 			img {
 				width: 100%;
+                cursor: pointer;
 			}
 			.player_icon {
 				display: none;

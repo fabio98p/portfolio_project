@@ -3,6 +3,7 @@ start project with: npm run serve
 usful link for translation i18n:
 https://vue-i18n.intlify.dev/guide/advanced/sfc.html
 https://phrase.com/blog/posts/ultimate-guide-to-vue-localization-with-vue-i18n/
+https://kazupon.github.io/vue-i18n/guide/sfc.html#webpack
 
 link for portfolio ideas:
 
@@ -39,3 +40,7 @@ https://stackoverflow.com/questions/36170425/detect-click-outside-element#answer
 dark mode source:
 https://dev.to/tqbit/create-your-own-dark-mode-toggle-component-with-vue-js-1284
 https://codesandbox.io/s/elegant-noether-2ed4u2?file=/src/App.vue:461-1381
+
+deploy link:
+https://cli.vuejs.org/guide/deployment.html#netlify
+https://app.netlify.com/teams/fabio98p/overview
