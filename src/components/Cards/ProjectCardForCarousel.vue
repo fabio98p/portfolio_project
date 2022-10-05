@@ -1,5 +1,5 @@
 <template>
-		<div id="projectCard">
+		<div id="project_card">
 			<div class="container">
 				<h1>{{ project.card.title.source }}</h1>
 				<div class="languages">
@@ -35,7 +35,7 @@ export default {
 * {
 	text-decoration: none;
 }
-#projectCard {
+#project_card {
 	background-color: lightgray;
 	padding: 25px 25px 80px 25px;
 	border-radius: 20px;

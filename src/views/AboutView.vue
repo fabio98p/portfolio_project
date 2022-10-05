@@ -1,24 +1,24 @@
 <template>
 	<div id="about">
         <div class="introduction">
-            <h1>{{ $t('aboutme.title') }}</h1>
-            <h3>{{ $t('aboutme.jobwork') }}</h3>
-            <div class="">{{ $t('aboutme.description') }}</div>
+            <h1>{{ $t('aboutmeview.title') }}</h1>
+            <h3>{{ $t('aboutmeview.jobwork') }}</h3>
+            <div class="">{{ $t('aboutmeview.description') }}</div>
         </div>
 
 		<div class="workexpirience">
-            <h2>{{ $t('aboutme.workexpirience.name') }}</h2>
+            <h2>{{ $t('aboutmeview.workexpirience.name') }}</h2>
             <ul class="expiriences">
-                <li v-for="expirience in $tm('aboutme.workexpirience.experienceslist')" class="expirience">
+                <li v-for="expirience in $tm('aboutmeview.workexpirience.experienceslist')" class="expirience">
                     <ExpirienceCard :expirience="expirience"></ExpirienceCard>
                 </li>
             </ul>
         </div>
 
         <div class="trainings">
-            <h2>{{ $t('aboutme.trainings.name') }}</h2>
+            <h2>{{ $t('aboutmeview.trainings.name') }}</h2>
             <ul class="expiriences">
-                <li v-for="expirience in $tm('aboutme.trainings.experienceslist')" class="expirience">
+                <li v-for="expirience in $tm('aboutmeview.trainings.experienceslist')" class="expirience">
                     <ExpirienceCard :expirience="expirience"></ExpirienceCard>
                 </li>
             </ul>

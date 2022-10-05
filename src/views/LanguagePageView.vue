@@ -1,6 +1,6 @@
 <template>
-	<div id="languagePageView">
-		<h1>{{$t('languagepage.title', {language: this.$route.params.id})}}</h1>
+	<div id="language_page_view">
+		<h1>{{$t('languageview.title', {language: this.$route.params.id})}}</h1>
 		<ul v-if="projects.length != 0">
 			<li v-for="project of projects">
 				<ProjectCard :project="project"></ProjectCard>
@@ -34,7 +34,7 @@ export default {
 }
 </script>
 <style scoped lang="scss">
-#languagePageView {
+#language_page_view {
 	background-color: green;
     .no_project{
         font-size: 25px;

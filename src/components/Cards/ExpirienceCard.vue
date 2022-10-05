@@ -1,5 +1,5 @@
 <template>
-	<div id="expirienceCard">
+	<div id="expirience_card">
 		<h4 class="role">{{ expirience.role.source }}</h4>
 		<div class="workinfo">
 			<div class="company">{{ expirience.company.source }}</div>
@@ -37,7 +37,7 @@ export default {
 }
 </script>
 <style scoped lang="scss">
-#expirienceCard {
+#expirience_card {
 	margin-bottom: 5px;
 	border-bottom: 1px solid lightgray;
     padding: 10px;

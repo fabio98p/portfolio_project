@@ -77,7 +77,7 @@
 			]
 		}
 	},
-	"homepage": {
+	"homeview": {
 		"name": "Parisi Fabio",
 		"title": "Caffe internazionale",
 		"selfdescription": "Un Sito per domarli, un Sito per trovarli, Un Sito per ghermirli e nel buio incatenarli",
@@ -86,7 +86,7 @@
 			"list": ["portfolio", "snake"]
 		}
 	},
-	"aboutmepage": {
+	"aboutmeview": {
 		"title": "Sono Parisi Fabio",
 		"jobwork": "Jr. Full Stack Web Developer",
 		"description": "Sono Parisi Fabio, ho 24 anni e vengo dall'italia",
@@ -181,10 +181,10 @@
 			]
 		}
 	},
-	"projectpage": {
+	"projectview": {
         "title": "{project} Project"
     },
-	"languagepage": {
+	"languageview": {
         "title": "Questa e' la pagina {language} e di seguito satanno esposti tutti i progetti {language}",
 		"noproject": "Non sono ancora stati creati progetti con {language} oppure non sono ancora ultimati"
 	},

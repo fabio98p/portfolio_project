@@ -1,5 +1,5 @@
 <template>
-	<div id="imageCarousel">
+	<div id="image_carousel">
 		<div v-for="media in medias" class="image">
             <div class="media_container" v-if="GetCardIdByElement(media) == this.actualMedia">
                 <img :src="media.link.source" v-if="media.type.source == 'image'"  @click="GetImageById(media)" />
@@ -71,7 +71,7 @@ export default {
 <style lang="scss" scoped>
 @import '@/master.scss';
 
-#imageCarousel {
+#image_carousel {
 	position: relative;
 	overflow: hidden;
 	background-color: cadetblue;

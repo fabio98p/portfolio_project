@@ -1,9 +1,9 @@
 <template>
-	<div id="homepage">
-		<h1 @click="aaa" class="name">{{ $t('home.name') }}</h1>
-		<div class="selfdescription">{{ $t('home.selfdescription') }}</div>
+	<div id="home_page">
+		<h1 @click="aaa" class="name">{{ $t('homeview.name') }}</h1>
+		<div class="selfdescription">{{ $t('homeview.selfdescription') }}</div>
 		<div class="mainsproject">
-			<h2>{{ $t('home.mainsproject.introduction') }}</h2>
+			<h2>{{ $t('homeview.mainsproject.introduction') }}</h2>
 			<!-- <ul>
 				<li v-for="project of projects">
 					<ProjectCard :project="project"></ProjectCard>
@@ -17,14 +17,14 @@
 import ProjectCard from '@/components/Cards/ProjectCard.vue'
 import ProjectCardCarousel from '@/components/Carousel/ProjectCardCarousel.vue'
 export default {
-	name: 'home',
+	name: 'homeview',
 	components: {
     ProjectCard,
     ProjectCardCarousel
 },
     data() {
 		return {
-			projects: this.$tm('projects').filter(project => this.$tm(`home.mainsproject.list`).filter( projectname => projectname.source == project.id.source)),
+			projects: this.$tm('projects').filter(project => this.$tm(`homeview.mainsproject.list`).filter( projectname => projectname.source == project.id.source)),
 		}
 	},
 	methods: {
@@ -36,7 +36,7 @@ export default {
 }
 </script>
 <style scoped lang="scss">
-#homepage {
+#home_page {
 	background-color: lightblue;
     min-height: 100%;
 

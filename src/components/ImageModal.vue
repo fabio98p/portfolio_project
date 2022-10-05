@@ -1,5 +1,5 @@
 <template>
-	<div id="imageModal">{{dataTest}}</div>
+	<div id="image_modal">{{dataTest}}</div>
 </template>
 <script>
 export default {
@@ -18,7 +18,7 @@ export default {
 }
 </script>
 <style scoped lang="scss">
-#imageModal {
+#image_modal {
 	background-color: lightgray;
 }
 </style>

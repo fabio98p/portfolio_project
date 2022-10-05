@@ -1,5 +1,5 @@
 <template>
-	<div id="projectCard">
+	<div id="project_card">
 		<div class="header">
 			<h1>
 				{{ project.card.title.source }}
@@ -40,7 +40,7 @@ export default {
 * {
 	text-decoration: none;
 }
-#projectCard {
+#project_card {
 	background-color: lightgray;
 	padding: 25px;
 	border-radius: 20px;

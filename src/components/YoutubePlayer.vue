@@ -1,5 +1,5 @@
 <template>
-	<div id="youtubePlayer" ref="youtubePlayer">
+	<div id="youtube_player" ref="youtubePlayer">
 		<Youtube @change="stopCurrentVideo" ref="youtube" :autoplay="0" :videoid="idVideo" :controls="1" :width="width" :height="height" :key="componentKey" />
 	</div>
 </template>
@@ -50,7 +50,7 @@ export default {
 }
 </script>
 <style type="scss" scoped>
-.youtubePlayer {
+.youtube_player {
 	max-width: 100%;
 }
 </style>

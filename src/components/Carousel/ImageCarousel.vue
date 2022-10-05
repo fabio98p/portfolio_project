@@ -1,5 +1,5 @@
 <template>
-	<div id="imageCarousel">
+	<div id="image_carousel">
 		<div class="back" @click="Back">
 			<font-awesome-icon icon="fa-solid fa-chevron-left" />
 		</div>
@@ -54,7 +54,7 @@ export default {
 <style lang="scss" scoped>
 @import '@/master.scss';
 
-#imageCarousel {
+#image_carousel {
     border-radius: 30px;
     position: relative;
     overflow: hidden;
