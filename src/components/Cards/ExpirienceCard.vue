@@ -1,20 +1,20 @@
 <template>
 	<div id="expirience_card">
-		<h4 class="role">{{ expirience.role.source }}</h4>
+		<h4 class="role">{{ expirience.role.toString().split('\[')[1].split('\]')[0].slice(1, -1) }}</h4>
 		<div class="workinfo">
-			<div class="company">{{ expirience.company.source }}</div>
+			<div class="company">{{ expirience.company.toString().split('\[')[1].split('\]')[0].slice(1, -1) }}</div>
 			<div>&nbsp;-&nbsp;</div>
-			<div class="typeofcontract">{{ expirience.typeofcontract.source }}</div>
+			<div class="typeofcontract">{{ expirience.typeofcontract.toString().split('\[')[1].split('\]')[0].slice(1, -1) }}</div>
 		</div>
 		<div class="time">
-			<div class="statdate">{{ expirience.statdate.source }}</div>
+			<div class="statdate">{{ expirience.statdate.toString().split('\[')[1].split('\]')[0].slice(1, -1) }}</div>
 			<div>&nbsp;&nbsp;-&nbsp;</div>
-			<div class="enddate">{{ expirience.enddate.source }}</div>
+			<div class="enddate">{{ expirience.enddate.toString().split('\[')[1].split('\]')[0].slice(1, -1) }}</div>
 			<div>&nbsp;&nbsp;&nbsp;</div>
-			<div class="duration">{{ expirience.duration.source }}</div>
+			<div class="duration">{{ expirience.duration.toString().split('\[')[1].split('\]')[0].slice(1, -1) }}</div>
 		</div>
-        <div class="location">{{ expirience.location.source }}</div>
-		<div class="description">{{ expirience.description.source }}</div>
+        <div class="location">{{ expirience.location.toString().split('\[')[1].split('\]')[0].slice(1, -1) }}</div>
+		<div class="description">{{ expirience.description.toString().split('\[')[1].split('\]')[0].slice(1, -1) }}</div>
 	</div>
 </template>
 <script>

@@ -2,17 +2,17 @@
 	<section id="project">
 		<div>
 			<header>
-				<h1>{{ $t('projectview.title', {project: project.id.source}) }}</h1>
+				<h1>{{ $t('projectview.title', {project: project.id.toString().split('\[')[1].split('\]')[0].slice(1, -1)}) }}</h1>
 				<div class="languages">
-					<div class="language" :class="language.source" v-for="language in project.languages">
-						<router-link :to="{ name: 'language', params: { id: `${language.source}` } }" class="link">{{ language.source }}</router-link>
+					<div class="language" :class="language.toString().split('\[')[1].split('\]')[0].slice(1, -1)" v-for="language in project.languages">
+						<router-link :to="{ name: 'language', params: { id: `${language.toString().split('\[')[1].split('\]')[0].slice(1, -1)}` } }" class="link">{{ language.toString().split('\[')[1].split('\]')[0].slice(1, -1) }}</router-link>
 					</div>
 				</div>
 			</header>
 
 			<main>
 				<div class="subtitle">
-					<h2>{{ project.main.subtitle.source }}</h2>
+					<h2>{{ project.main.subtitle.toString().split('\[')[1].split('\]')[0].slice(1, -1) }}</h2>
 					<div class="border"></div>
 					<button @click="ChangeDescription">
 						{{ description == 'description' ? 'Mostra descrizione tecnica' : 'Mostra descrizione' }}
@@ -20,26 +20,26 @@
 				</div>
 				<div class="content">
 					<SteamCarousel :medias="project.main.images" class="carousel" />
-					<p v-if="description == 'description'">{{ project.main.description.source }}</p>
-					<p v-else>{{ project.main.technicaldescription.source }}</p>
+					<p v-if="description == 'description'">{{ project.main.description.toString().split('\[')[1].split('\]')[0].slice(1, -1) }}</p>
+					<p v-else>{{ project.main.technicaldescription.toString().split('\[')[1].split('\]')[0].slice(1, -1) }}</p>
 				</div>
 				<div class="contributors" v-if="project.contributors">
 					<h3>
-                        {{ project.contributors.listintroduction.source }}
+                        {{ project.contributors.listintroduction.toString().split('\[')[1].split('\]')[0].slice(1, -1) }}
                     </h3>
 					<ul>
                         <li v-for="e in project.contributors.list">
-                            <a :href="e.link.source">{{e.title.source}}</a>
+                            <a :href="e.link.toString().split('\[')[1].split('\]')[0].slice(1, -1)">{{e.title.toString().split('\[')[1].split('\]')[0].slice(1, -1)}}</a>
                         </li>
                     </ul>
 				</div>
                 <div class="links" v-if="project.links">
 					<h3>
-                        {{ project.links.listintroduction.source }}
+                        {{ project.links.listintroduction.toString().split('\[')[1].split('\]')[0].slice(1, -1) }}
                     </h3>
 					<ul>
                         <li v-for="e in project.links.list">
-                            <a :href="e.link.source">{{e.title.source}}</a>
+                            <a :href="e.link.toString().split('\[')[1].split('\]')[0].slice(1, -1)">{{e.title.toString().split('\[')[1].split('\]')[0].slice(1, -1)}}</a>
                         </li>
                     </ul>
 				</div>
@@ -56,14 +56,14 @@ export default {
 	components: { YoutubePlayer, SteamCarousel },
 	data() {
 		return {
-			project: this.$tm('projects').filter(project => project.id.source == this.$route.params.id)[0],
+			project: this.$tm('projects').filter(project => project.id.toString().split('\[')[1].split('\]')[0].slice(1, -1) == this.$route.params.id)[0],
 			imagesaaaa: this.$tm(`projects.${this.$route.params.id}.languages`),
 			description: 'description'
 		}
 	},
 	watch: {
 		$route(to, from) {
-			this.project = this.$tm('projects').filter(project => project.id.source == this.$route.params.id)[0]
+			this.project = this.$tm('projects').filter(project => project.id.toString().split('\[')[1].split('\]')[0].slice(1, -1) == this.$route.params.id)[0]
 		}
 	},
 	methods: {

@@ -2,13 +2,13 @@
 	<div id="image_carousel">
 		<div v-for="media in medias" class="image">
             <div class="media_container" v-if="GetCardIdByElement(media) == this.actualMedia">
-                <img :src="media.link.source" v-if="media.type.source == 'image'"  @click="GetImageById(media)" />
-                <YoutubePlayer :idVideo="media.link.source" v-if="media.type.source == 'player'" />
+                <img :src="media.link.toString().split('\[')[1].split('\]')[0].slice(1, -1)" v-if="media.type.toString().split('\[')[1].split('\]')[0].slice(1, -1) == 'image'"  @click="GetImageById(media)" />
+                <YoutubePlayer :idVideo="media.link.toString().split('\[')[1].split('\]')[0].slice(1, -1)" v-if="media.type.toString().split('\[')[1].split('\]')[0].slice(1, -1) == 'player'" />
             </div>
 		</div>
 		<div class="medias_selector">
 			<div class="media" v-for="media in medias" :class="AddMediaClass(media)">
-				<img :src="media.thumbnail.source" @click="SetactualMediaById(GetCardIdByElement(media))" />
+				<img :src="media.thumbnail.toString().split('\[')[1].split('\]')[0].slice(1, -1)" @click="SetactualMediaById(GetCardIdByElement(media))" />
 				<div class="player_icon">
 					<font-awesome-icon icon="fa-solid fa-play" class="play" />
 				</div>
@@ -63,7 +63,7 @@ export default {
 			this.actualMedia = id
 		},
 		AddMediaClass(media) {
-			return `${this.GetCardIdByElement(media) == this.actualMedia ? 'active' : ''} ${media.type.source == 'player' ? 'player' : 'image'}`
+			return `${this.GetCardIdByElement(media) == this.actualMedia ? 'active' : ''} ${media.type.toString().split('\[')[1].split('\]')[0].slice(1, -1) == 'player' ? 'player' : 'image'}`
 		}
 	}
 }

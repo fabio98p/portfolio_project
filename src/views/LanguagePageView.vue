@@ -16,13 +16,13 @@ export default {
 	components: { ProjectCard },
 	data() {
 		return {
-			projects: this.$tm('projects').filter(project => project.languages.filter(language => language.source == this.$route.params.id).length >= 1)
+			projects: this.$tm('projects').filter(project => project.languages.filter(language => language.toString().split('\[')[1].split('\]')[0].slice(1, -1) == this.$route.params.id).length >= 1)
 		}
 	},
     watch: {
         $route (to, from){
             setTimeout(() => {
-                this.projects = this.$tm('projects').filter(project => project.languages.filter(language => language.source == this.$route.params.id).length >= 1)
+                this.projects = this.$tm('projects').filter(project => project.languages.filter(language => language.toString().split('\[')[1].split('\]')[0].slice(1, -1) == this.$route.params.id).length >= 1)
             }, 1);
         }
     },

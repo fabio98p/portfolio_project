@@ -24,7 +24,7 @@ export default {
 },
     data() {
 		return {
-			projects: this.$tm('projects').filter(project => this.$tm(`homeview.mainsproject.list`).filter( projectname => projectname.source == project.id.source)),
+			projects: this.$tm('projects').filter(project => this.$tm(`homeview.mainsproject.list`).filter( projectname => projectname.toString().split('\[')[1].split('\]')[0].slice(1, -1) == project.id.toString().split('\[')[1].split('\]')[0].slice(1, -1))),
 		}
 	},
 	methods: {

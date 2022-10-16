@@ -32,7 +32,8 @@ https://vue-i18n.intlify.dev/api/injection.html#componentcustomproperties
 use a array from i18n:
 $tm(path)
 cicle or somthing
-in the end of the process of take a item add .source
+in the end of the process of take a item add source
+tri to use the this if dosent work on deployment .toString().split('\[')[1].split('\]')[0].slice(1, -1)
 
 link dropdown:
 https://stackoverflow.com/questions/36170425/detect-click-outside-element#answer-64391475
