@@ -4,7 +4,7 @@
 			<font-awesome-icon icon="fa-solid fa-chevron-left" />
 		</div>
 		<div v-for="data in datas" class="image">
-			<img :src="data.link.source" v-if="GetCardIdByElement(data) == this.actualImg" @click="GetImageById(data)" />
+			<img :src="require(`@/assets/${data.link.source}`)" v-if="GetCardIdByElement(data) == this.actualImg" @click="GetImageById(data)" />
 		</div>
 		<div class="front" @click="Front">
 			<font-awesome-icon icon="fa-solid fa-chevron-right" />

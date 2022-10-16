@@ -27,6 +27,10 @@
 				{
 					"text": "snake",
 					"link": "snake"
+				},
+                {
+					"text": "lim-booking",
+					"link": "lim-booking"
 				}
 			]
 		},
@@ -181,6 +185,27 @@
 			]
 		}
 	},
+    "booleanview": {
+		"title": "Qua trovi tutto riguardo al corso boolean",
+        "subtitle": "portfolio creato da parisi fabio", 
+		"description": "Sono Parisi Fabio, ho 24 anni e vengo dall'italia",
+		"carousel1": {
+			"name": "esperienza solo html css",
+			"projects": [
+				
+			]
+		},
+		"carousel2": {
+			"name": "esperienza html css js e pacchetti node js",
+			"projects": [
+			]
+		},
+        "carousel3": {
+			"name": "esperienza php e laravel",
+			"projects": [
+			]
+		}
+	},
 	"projectview": {
         "title": "{project} Project"
     },
@@ -200,33 +225,18 @@
 				"idvideo": "qGk4E9ss95s",
 				"images": [
 					{
-						"thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/16x9_by_Pengo.svg/1200px-16x9_by_Pengo.svg.png",
-						"link": "PGKdhZe_n14",
+						"thumbnail": "portfolio120x68.png",
+						"media": "PGKdhZe_n14",
 						"type": "player"
 					},
 					{
-						"thumbnail": "https://images.unsplash.com/photo-1549213821-4708d624e1d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8MTYlM0E5fGVufDB8fDB8fA%3D%3D&w=1000&q=80",
-						"link": "https://images.unsplash.com/photo-1549213821-4708d624e1d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8MTYlM0E5fGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+						"thumbnail": "portfolio120x68.png",
+						"media": "portfolio.png",
 						"type": "image"
 					},
-					{
-						"thumbnail": "https://thumbs.dreamstime.com/b/sunset-tropical-beach-picture-aspect-ratio-face-figure-girl-changed-93174726.jpg",
-						"link": "https://thumbs.dreamstime.com/b/sunset-tropical-beach-picture-aspect-ratio-face-figure-girl-changed-93174726.jpg",
-						"type": "image"
-					},
-					{
-						"thumbnail": "https://www.online-tech-tips.com/wp-content/uploads/2016/03/widescreen-iphone-photo.jpg",
-						"link": "https://www.online-tech-tips.com/wp-content/uploads/2016/03/widescreen-iphone-photo.jpg",
-						"type": "image"
-					},
-					{
-						"thumbnail": "https://previews.123rf.com/images/patterndesign/patterndesign1706/patterndesign170600902/80149005-abstract-image-background-16-9-aspect-ratio-in-digital-art-style-horizontal-blue-waves-.jpg",
-						"link": "https://previews.123rf.com/images/patterndesign/patterndesign1706/patterndesign170600902/80149005-abstract-image-background-16-9-aspect-ratio-in-digital-art-style-horizontal-blue-waves-.jpg",
-						"type": "image"
-					},
-					{
-						"thumbnail": "https://wallpaperaccess.com/full/1406840.jpg",
-						"link": "https://wallpaperaccess.com/full/1406840.jpg",
+                    {
+						"thumbnail": "portfolio120x68.png",
+						"media": "portfolio.png",
 						"type": "image"
 					}
 				]
@@ -264,6 +274,41 @@
 				]
 			}
 		},
+        {
+			"id": "lim-booking",
+			"main": {
+				"subtitle": "lim-booking creato da parisi fabio",
+				"description": "loren ipsum",
+				"technicaldescription": "loren ipsum",
+				"images": [
+					{
+						"thumbnail": "boolean120x68.png",
+						"media": "boolean1.png",
+						"link": "boolean120x68.png",
+						"type": "image"
+					}
+				]
+			},
+			"card": {
+				"title": "lim-booking",
+				"shortdescription": "lim-booking, per maggiori informazioni premi qua",
+				"route": "lim-booking"
+			},
+			"languages": ["html", "css"],
+			"links": {
+				"listintroduction": "links",
+				"list": [
+					{
+						"title": "deploy",
+						"link": "https://lim-booking.netlify.app/"
+					},
+					{
+						"title": "github",
+						"link": "https://github.com/fabio98p/ForBoolean.careers"
+					}
+				]
+			}
+		},
 		{
 			"id": "snake",
 			"main": {
@@ -275,39 +320,18 @@
 				"idvideo": "1nIcorC1tj8",
 				"images": [
 					{
-						"id": 1,
-						"thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/16x9_by_Pengo.svg/1200px-16x9_by_Pengo.svg.png",
-						"link": "PGKdhZe_n14",
+						"thumbnail": "snake120x68.png",
+						"media": "PGKdhZe_n14",
 						"type": "player"
 					},
 					{
-						"id": 2,
-						"thumbnail": "https://images.unsplash.com/photo-1549213821-4708d624e1d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8MTYlM0E5fGVufDB8fDB8fA%3D%3D&w=1000&q=80",
-						"link": "https://images.unsplash.com/photo-1549213821-4708d624e1d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8MTYlM0E5fGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+						"thumbnail": "snake120x68.png",
+						"media": "snake.png",
 						"type": "image"
 					},
-					{
-						"id": 3,
-						"thumbnail": "https://thumbs.dreamstime.com/b/sunset-tropical-beach-picture-aspect-ratio-face-figure-girl-changed-93174726.jpg",
-						"link": "https://thumbs.dreamstime.com/b/sunset-tropical-beach-picture-aspect-ratio-face-figure-girl-changed-93174726.jpg",
-						"type": "image"
-					},
-					{
-						"id": 4,
-						"thumbnail": "https://www.online-tech-tips.com/wp-content/uploads/2016/03/widescreen-iphone-photo.jpg",
-						"link": "https://www.online-tech-tips.com/wp-content/uploads/2016/03/widescreen-iphone-photo.jpg",
-						"type": "image"
-					},
-					{
-						"id": 5,
-						"thumbnail": "https://previews.123rf.com/images/patterndesign/patterndesign1706/patterndesign170600902/80149005-abstract-image-background-16-9-aspect-ratio-in-digital-art-style-horizontal-blue-waves-.jpg",
-						"link": "https://previews.123rf.com/images/patterndesign/patterndesign1706/patterndesign170600902/80149005-abstract-image-background-16-9-aspect-ratio-in-digital-art-style-horizontal-blue-waves-.jpg",
-						"type": "image"
-					},
-					{
-						"id": 6,
-						"thumbnail": "https://wallpaperaccess.com/full/1406840.jpg",
-						"link": "https://wallpaperaccess.com/full/1406840.jpg",
+                    {
+						"thumbnail": "snake120x68.png",
+						"media": "snake.png",
 						"type": "image"
 					}
 				]

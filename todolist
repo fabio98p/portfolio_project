@@ -1,13 +1,15 @@
 completare il steamcarousel con la scrolbar custom
 
-mettere immagini da locale nei carosello
-
 fare refactoring di tutto il codice
 
-ricontrollare lezioni sulle route
+ricontrollare lezioni sulle rotte vue
 mettere il tasto back
 fare componente modal per vedere l'immagine grande in carousel
 
 quando si faranno i projetti inserire un carousel con "progietti in corso" nella homepage
 
+fare pagina boolean
+
 rimuovere errori, warning e console log dal codice
+
+trovare modo per fare il deploy in cui trovi la "source" in senza fronzoli
