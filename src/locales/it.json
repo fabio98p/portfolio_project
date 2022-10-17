@@ -29,8 +29,28 @@
 					"link": "snake"
 				},
                 {
-					"text": "lim-booking",
+					"text": "Lim Booking",
 					"link": "lim-booking"
+				},
+                {
+					"text": "Boostrap Freelancer",
+					"link": "boostrap-freelancer"
+				},
+                {
+					"text": "DigitalOcean",
+					"link": "digitalocean"
+				},
+                {
+					"text": "HubSpot",
+					"link": "hubspot"
+				},
+                {
+					"text": "Memory",
+					"link": "memory"
+				},
+                {
+					"text": "Spotify",
+					"link": "spotify"
 				}
 			]
 		},
@@ -219,6 +239,7 @@
 		{
 			"id": "portfolio",
 			"main": {
+                "title": "Portfolio",
 				"subtitle": "portfolio creato da parisi fabio",
 				"description": "Questo projecto e' stato creato interamente da ma dalla a alla z grazie all'utilizzo di un potente framework ovvero Vue3, questo portfolio è stato fatto per racchiudere tutti i miei progetti e poterli mostrare in modo semplice e veloce",
 				"technicaldescription": "Questo progetto racchiude tutti i miei progetti. Per creare questo progetto ho usato come base vue3 e vue router, per quanto riguarda lo stile ho deciso di utilizzare il preprocessore scss per maggiore facilita nello scrivere lo stile rispetto al classico css invece per quando riguarda la programmazione ho preferito optare per javascript invece di typescript perche ho pensato che per un progetto cosi piccolo non sarebbe stato necessario utilizzarlo, in seguito ho studiato come implementare i18next che mi permette di poter far comprendere a chiunque quello che voglio comunicare",
@@ -235,8 +256,8 @@
 						"type": "image"
 					},
                     {
-						"thumbnail": "portfolio120x68.png",
-						"media": "portfolio.png",
+						"thumbnail": "portfolio-about-page120x68.png",
+						"media": "portfolio-about-page.png",
 						"type": "image"
 					}
 				]
@@ -274,44 +295,10 @@
 				]
 			}
 		},
-        {
-			"id": "lim-booking",
-			"main": {
-				"subtitle": "lim-booking creato da parisi fabio",
-				"description": "loren ipsum",
-				"technicaldescription": "loren ipsum",
-				"images": [
-					{
-						"thumbnail": "boolean120x68.png",
-						"media": "boolean1.png",
-						"link": "boolean120x68.png",
-						"type": "image"
-					}
-				]
-			},
-			"card": {
-				"title": "lim-booking",
-				"shortdescription": "lim-booking, per maggiori informazioni premi qua",
-				"route": "lim-booking"
-			},
-			"languages": ["html", "css"],
-			"links": {
-				"listintroduction": "links",
-				"list": [
-					{
-						"title": "deploy",
-						"link": "https://lim-booking.netlify.app/"
-					},
-					{
-						"title": "github",
-						"link": "https://github.com/fabio98p/ForBoolean.careers"
-					}
-				]
-			}
-		},
 		{
 			"id": "snake",
 			"main": {
+                "title": "Snake",
 				"description": "Questo projecto e' stato creato interamente da ma dalla a alla z grazie all'utilizzo di un potente framework ovvero Vue3, questo snake è stato fatto per racchiudere tutti i miei progetti e poterli mostrare in modo semplice e veloce",
 				"subtitle": "snake creato da parisi fabio",
 				"technicaldescription": "Questo progetto racchiude tutti i miei progetti. Per creare questo progetto ho usato come base vue3 e vue router, per quanto riguarda lo stile ho deciso di utilizzare il preprocessore scss per maggiore facilita nello scrivere lo stile rispetto al classico css invece per quando riguarda la programmazione ho preferito optare per javascript invece di typescript perche ho pensato che per un progetto cosi piccolo non sarebbe stato necessario utilizzarlo, in seguito ho studiato come implementare i18next che mi permette di poter far comprendere a chiunque quello che voglio comunicare",
@@ -342,6 +329,257 @@
 				"route": "snake"
 			},
 			"languages": ["html", "css", "js"]
+		},
+        {
+			"id": "lim-booking",
+			"main": {
+                "title": "Lim Booking",
+				"subtitle": "Lim Booking creato da parisi fabio",
+				"description": "loren ipsum",
+				"technicaldescription": "loren ipsum",
+				"images": [
+					{
+						"thumbnail": "boolean120x68.png",
+						"media": "boolean1.png",
+						"link": "boolean120x68.png",
+						"type": "image"
+					}
+				]
+			},
+			"card": {
+				"title": "Lim Booking",
+				"shortdescription": "limBooking, per maggiori informazioni premi qua",
+				"route": "lim-booking"
+			},
+			"languages": ["html", "css"],
+			"links": {
+				"listintroduction": "links",
+				"list": [
+					{
+						"title": "deploy",
+						"link": "https://app.netlify.com/sites/lim-booking/overview"
+					},
+					{
+						"title": "github",
+						"link": "https://github.com/fabio98p/ForBoolean.careers"
+					}
+				]
+			}
+		},
+        {
+			"id": "boostrap-freelancer",
+			"main": {
+                "title": "Boostrap freelancer by fabio",
+				"subtitle": "Boostrap freelancer by fabio creato da parisi fabio",
+				"description": "loren ipsum",
+				"technicaldescription": "loren ipsum",
+				"images": [
+					{
+						"thumbnail": "freelancer-desktop120x68.png",
+						"media": "freelancer-desktop.png",
+						"type": "image"
+					},
+                    {
+						"thumbnail": "freelancer-tablet120x68.png",
+						"media": "freelancer-tablet.png",
+						"type": "image"
+					},
+                    {
+						"thumbnail": "freelancer-phone120x68.png",
+						"media": "freelancer-phone.png",
+						"type": "image"
+					}
+				]
+			},
+			"card": {
+				"title": "Boostrap freelancer by fabio",
+				"shortdescription": "limBooking, per maggiori informazioni premi qua",
+				"route": "boostrap-freelancer"
+			},
+			"languages": ["html", "css"],
+			"links": {
+				"listintroduction": "links",
+				"list": [
+					{
+						"title": "deploy",
+						"link": "https://boostrap-freelancer-by-fabio.netlify.app/"
+					},
+					{
+						"title": "github",
+						"link": "https://github.com/fabio98p/html-css-bootstrap-freelancer"
+					}
+				]
+			}
+		},
+        {
+			"id": "digitalocean",
+			"main": {
+                "title": "DigitalOcean",
+				"subtitle": "DigitalOcean creato da parisi fabio",
+				"description": "loren ipsum",
+				"technicaldescription": "loren ipsum",
+				"images": [
+					{
+						"thumbnail": "digitalocean-jumbo120x68.png",
+						"media": "digitalocean-jumbo.png",
+						"type": "image"
+					},
+                    {
+						"thumbnail": "digitalocean-fly120x68.png",
+						"media": "digitalocean-fly.png",
+						"type": "image"
+					}
+				]
+			},
+			"card": {
+				"title": "DigitalOcean",
+				"shortdescription": "limBooking, per maggiori informazioni premi qua",
+				"route": "digitalocean"
+			},
+			"languages": ["html", "css"],
+			"links": {
+				"listintroduction": "links",
+				"list": [
+					{
+						"title": "deploy",
+						"link": "https://digitalocean-by-fabio.netlify.app/"
+					},
+					{
+						"title": "github",
+						"link": "https://github.com/fabio98p/html-css-digitalocean"
+					}
+				]
+			}
+		},
+        {
+			"id": "memory",
+			"main": {
+                "title": "Memory",
+				"subtitle": "Memory creato da parisi fabio",
+				"description": "loren ipsum",
+				"technicaldescription": "loren ipsum",
+				"images": [
+					{
+						"thumbnail": "memory120x68.png",
+						"media": "memory.png",
+						"type": "image"
+					},
+                    {
+						"thumbnail": "memory-card120x68.png",
+						"media": "memory-card.png",
+						"type": "image"
+					}
+				]
+			},
+			"card": {
+				"title": "Memory",
+				"shortdescription": "limBooking, per maggiori informazioni premi qua",
+				"route": "memory"
+			},
+			"languages": ["html", "css"],
+			"links": {
+				"listintroduction": "links",
+				"list": [
+					{
+						"title": "deploy",
+						"link": "https://memory-by-fabio.netlify.app/"
+					},
+					{
+						"title": "github",
+						"link": "https://github.com/fabio98p/html-css-memory"
+					}
+				]
+			}
+		},
+        {
+			"id": "hubspot",
+			"main": {
+                "title": "HubSpot",
+				"subtitle": "HubSpot creato da parisi fabio",
+				"description": "loren ipsum",
+				"technicaldescription": "loren ipsum",
+				"images": [
+					{
+						"thumbnail": "hubspot-jumbo120x68.png",
+						"media": "hubspot-jumbo.png",
+						"type": "image"
+					},
+                    {
+                        "thumbnail": "hubspot-card120x68.png",
+                        "media": "hubspot-card.png",
+                        "type": "image"
+                    },
+                    {
+						"thumbnail": "hubspot-customer120x68.png",
+						"media": "hubspot-customer.png",
+						"type": "image"
+					}
+				]
+			},
+			"card": {
+				"title": "HubSpot",
+				"shortdescription": "limBooking, per maggiori informazioni premi qua",
+				"route": "hubspot"
+			},
+			"languages": ["html", "css"],
+			"links": {
+				"listintroduction": "links",
+				"list": [
+					{
+						"title": "deploy",
+						"link": "https://hubspot-by-fabio.netlify.app/"
+					},
+					{
+						"title": "github",
+						"link": "https://github.com/fabio98p/htmlcss-hubspot"
+					}
+				]
+			}
+		},
+        {
+			"id": "spotify",
+			"main": {
+                "title": "Spotify Web",
+				"subtitle": "Spotify Web creato da parisi fabio",
+				"description": "loren ipsum",
+				"technicaldescription": "loren ipsum",
+				"images": [
+					{
+						"thumbnail": "spotify-desktop120x68.png",
+						"media": "spotify-desktop.png",
+						"type": "image"
+					},
+                    {
+						"thumbnail": "spotify-tablet120x68.png",
+						"media": "spotify-tablet.png",
+						"type": "image"
+					},
+                    {
+						"thumbnail": "spotify-phone120x68.png",
+						"media": "spotify-phone.png",
+						"type": "image"
+					}
+				]
+			},
+			"card": {
+				"title": "Spotify Web",
+				"shortdescription": "limBooking, per maggiori informazioni premi qua",
+				"route": "spotify"
+			},
+			"languages": ["html", "css"],
+			"links": {
+				"listintroduction": "links",
+				"list": [
+					{
+						"title": "deploy",
+						"link": "https://sporify-by-fabio.netlify.app/"
+					},
+					{
+						"title": "github",
+						"link": "https://github.com/fabio98p/html-css-spotifyweb"
+					}
+				]
+			}
 		}
 	],
 	"languages": ["html", "css", "scss", "js", "ts", "jquery", "react", "vue", "angular", "i18n"]

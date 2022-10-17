@@ -2,7 +2,7 @@
 	<section id="project">
 		<div>
 			<header>
-				<h1>{{ $t('projectview.title', {project: project.id.source}) }}</h1>
+				<h1>{{ $t('projectview.title', {project: project.main.title.source}) }}</h1>
 				<div class="languages">
 					<div class="language" :class="language.source" v-for="language in project.languages">
 						<router-link :to="{ name: 'language', params: { id: `${language.source}` } }" class="link">{{ language.source }}</router-link>
