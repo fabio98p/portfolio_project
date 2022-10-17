@@ -1,15 +1,43 @@
-completare il steamcarousel con la scrolbar custom
-
-fare refactoring di tutto il codice
+///     cose grandi o implementazioni feature
 
 ricontrollare lezioni sulle rotte vue
 mettere il tasto back
 fare componente modal per vedere l'immagine grande in carousel
 
+fare pagina boolean
+sistemare tutti i progetti insetiti che abbiano readme coerente e siano finiti
+hubspot
+spotify
+memory
+digitalocean
+boostrap-freelancer
+
+completare il steamcarousel con la scrolbar custom
+
+trovare modo per fare il deploy in cui trovi la "source" in senza fronzoli
+
+
+///     baggettini
+
 quando si faranno i projetti inserire un carousel con "progietti in corso" nella homepage
 
-fare pagina boolean
+sistemare il mostra descrizione tecnica (bottone)
+
+
+///     cose da guardare sempre
+
+inserire pointer sugli elemnti cliccabili
+
+immagini non pickabili
 
 rimuovere errori, warning e console log dal codice
 
-trovare modo per fare il deploy in cui trovi la "source" in senza fronzoli
+fare refactoring di tutto il codice
+
+
+///     se divento pazzo e voglio fare robe di design
+
+cercare una palette di colori decente
+inserire i colori all'interno del app.vue e iniziare a usarli ovunque all'interno della pagina
+
+pensare alla parte responsive del sito
