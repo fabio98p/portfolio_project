@@ -1,4 +1,3 @@
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a name="readme-top"></a>
 <!--
 *** Thanks for checking out the Best-README-Template. If you have a suggestion
@@ -156,7 +155,7 @@ Project Link: [https://github.com/fabio98p/portfolio_project](https://github.com
 [license-shield]: https://img.shields.io/github/license/fabio98p/portfolio_project.svg?style=for-the-badge
 [license-url]: https://github.com/fabio98p/portfolio_project/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
+[linkedin-url]: https://www.linkedin.com/in/fabio-parisi-ab0297171/
 [product-screenshot]: src/assets/portfolio/portfolio.png
 
 [Vue.js]: https://img.shields.io/badge/Vue3-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
