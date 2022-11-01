@@ -84,26 +84,6 @@ export default {
 			overflow: hidden;
 		}
 	}
-	.dots {
-		position: absolute;
-		left: 50%;
-		bottom: 30px;
-		transform: translate(-50%, 0);
-
-		display: flex;
-
-		.dot {
-			height: 15px;
-			width: 15px;
-			background-color: white;
-			border: 2px solid black;
-			border-radius: 50%;
-			margin: 0 2px;
-		}
-		.dot.active {
-			background-color: #198754;
-		}
-	}
 	.medias_selector {
 		display: flex;
 		align-items: center;

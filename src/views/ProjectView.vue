@@ -139,6 +139,8 @@ export default {
 			align-items: top;
 			.carousel {
 				width: 60%;
+                min-width: 60%;
+                height: 420px;
 			}
 			p {
 				font-size: 20px;
